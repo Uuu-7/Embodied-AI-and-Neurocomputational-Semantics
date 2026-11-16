@@ -2,7 +2,7 @@
 
 **Status:** independent nomination for group review, not the final HA0 dataset. **Contributor path:** `candidates/Uuu-7/`. **Date:** 2026-11-16.
 
-This proposal stays within **spatial relations**. It contains 20 Chinese and 20 English candidate senses in [`candidate_pool_zh20_en20_v01.csv`](candidate_pool_zh20_en20_v01.csv). The Chinese list includes **阴** and **阳** in their geographic orientation senses. A short philosophical extension is discussed separately below; it is not mixed into the spatial rows or assigned the same feature scores.
+This proposal stays within **spatial relations**. It contains 20 Chinese and 20 English candidate senses in [`candidate_pool_zh20_en20_v01.csv`](candidate_pool_zh20_en20_v01.csv). The inventory covers geographic and viewer-relative orientation, containment, distance, adjacency, region parts, and paths.
 
 ## Candidate inventory
 
@@ -34,11 +34,11 @@ This proposal stays within **spatial relations**. It contains 20 Chinese and 20 
 
 The bilingual lists provide comparison opportunities, not 20 asserted translation equivalences. The unit is a **sense in a specified spatial use**, not an undifferentiated word form. Several English multiword expressions and Chinese locative nouns will require a consistent part-of-speech and taxonomy policy before final selection.
 
-## 阴 and 阳: spatial sense and limited philosophical extension
+## Sense scope and limited extensions
 
-The Ministry of Education's *Revised Mandarin Chinese Dictionary* gives the geographic sense of [阴](https://dict.revised.moe.edu.tw/dictView.jsp?ID=10442) as the north side of a mountain or south side of a river, and [阳](https://dict.revised.moe.edu.tw/dictView.jsp?ID=11167) as the south side of a mountain or north side of a river. These independently checked dictionary senses anchor ZH01 and ZH02. Their CSV definitions are manual English paraphrases, not quotations.
+Two geographic orientation senses have independently checked dictionary anchors, linked in the CSV. Their English definitions are manual paraphrases. Other lexical anchors remain unverified.
 
-The same forms also participate in philosophical uses concerning complementary or opposing aspects. For this spatial-relations proposal, that is a **small extension question**: does a learner carry an orientation or illuminated-side contrast into a non-spatial conceptual contrast? The proposal does not assume the answer. If the group later tests this, it should create separate philosophical sense records and separately annotated examples. Geographic orientation and philosophical contrast must not share one C or S score merely because the written forms match.
+Some spatial forms can also express philosophical contrasts. This is a limited extension for later comparison: any non-spatial use would need its own sense record and examples. It should not inherit the spatial sense's feature profile or C/S scores.
 
 ## Proposed feature schema and taxonomy
 
@@ -50,12 +50,12 @@ The proposed `category_parent_proposed` values are **manual grouping labels**, n
 
 **Claim:** viewpoint-dependent terms such as `左侧/右侧` and `to the left/right of` will change labels more often under a controlled viewpoint reversal than containment terms such as `内部/外部` and `inside/outside`.
 
-**Weakening result:** if both groups change at similar rates under matched scenes, the proposed distinction is not supported by this test. The `阴/阳` geographic uses offer a further contrast: their reference frame follows a mountain or river convention rather than the viewer's facing direction. This is a prediction to test, not a claim about model understanding.
+**Weakening result:** if both groups change at similar rates under matched scenes, the proposed distinction is not supported by this test. Geographic orientation offers a further contrast because its reference frame follows a mountain or river convention rather than the viewer's facing direction. This is a prediction to test, not a claim about model understanding.
 
 ## Review and handoff
 
-1. Review the 40 senses for natural usage, part of speech, and near-duplicates. Pay special attention to historical register for `阴/阳`, reference frames for front/back/left/right, contextual scale for near/far, and static versus path senses for `环绕/around/across`.
-2. Check lexical anchors for more rows using independent dictionaries or spatial-language resources. Only the two dictionary senses linked above have individually checked anchors here. Keep external ratings and the course's seven 0–2 channels distinct unless a conversion rule is documented.
+1. Review the 40 senses for natural usage, part of speech, and near-duplicates. Pay special attention to the historical register of geographic orientation terms, reference frames for front/back/left/right, contextual scale for near/far, and static versus path senses for `环绕/around/across`.
+2. Check lexical anchors for more rows using independent dictionaries or spatial-language resources. Only two rows have individually checked anchors here. Keep external ratings and the course's seven 0–2 channels distinct unless a conversion rule is documented.
 3. Select a final 20-concept HA0 set as a group. Give each row a non-circular definition, one documented category parent, seven rated features with per-value provenance, an example, and at least one honest uncertainty note.
 4. For HA1, compute C from reviewed feature values and S from verified taxonomy edges, retain both axes, draw the C×S plot, and test the adjustable composite and at least three weight choices. Quadrant coverage can only be evaluated after real C/S calculation.
 
