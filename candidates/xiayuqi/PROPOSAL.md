@@ -2,7 +2,7 @@
 
 **Status:** candidate nomination only. **Author:** xiayuqi, prepared with AI assistance; group validation required. **Date:** 2026-11-16.
 
-This is a **40-item proposal: 20 Chinese and 20 English candidates**, not the final HA0 20-concept submission. The candidate family is **spatial relations**, including orientation, containment, distance, adjacency, region parts, and paths. Teammates can compare candidate senses before selecting the final set.
+This is one **40-item proposal: 20 Chinese and 20 English candidates**, not the final group submission. The candidate family is **spatial relations**, including orientation, containment, distance, adjacency, region parts, and paths. After all three contributors have submitted independent pools, the group will compare senses and select a final set of **20 Chinese and 20 English concepts**.
 
 ## Chinese candidates (20)
 
@@ -72,12 +72,12 @@ These resources use different sense inventories and relation systems. A dictiona
 
 ## Review procedure for three contributors
 
-1. Each contributor submits an independent `candidates/<contributor>/candidate_pool_zh20_en20_v01.csv` and `PROPOSAL.md` on a separate draft PR. Compare by sense rather than spelling alone.
+1. Wait for all three contributors to submit an independent `candidates/<contributor>/candidate_pool_zh20_en20_v01.csv` and `PROPOSAL.md` on separate draft PRs. Compare by sense rather than spelling alone.
 2. Check natural usage, part of speech, reference frame, and literal spatial scope for every row. Record a different sense separately if it will be tested.
 3. Define each of the seven feature levels, collect independent 0–2 ratings with provenance, and record disagreements and low confidence. Do not turn channel hypotheses into numerical scores automatically.
 4. Build a documented miniature taxonomy, then calculate C and S from reviewed values and verified parent edges. Missing S stays NA.
 5. Plot C × S and count actually occupied quadrants. If coverage is uneven, reconsider the candidate set or document the limitation; do not tune ratings to fill quadrants.
-6. Select the final 20-concept HA0 set with a non-circular definition, one category parent, example sentence, provenance for every feature value, and an explicit uncertainty note.
+6. Select the final 20 Chinese and 20 English HA0 concepts with a non-circular definition, one category parent, example sentence, provenance for every feature value, and an explicit uncertainty note.
 7. For HA1, keep C and S separate, test adjustable weights for A, and report sensitivity. A possible seminar test is whether viewpoint reversal changes left/right labels more often than inside/outside labels in matched scenes.
 
 ## Review risks to keep visible
