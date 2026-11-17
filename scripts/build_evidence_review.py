@@ -60,7 +60,7 @@ def main() -> None:
             S_source_synset_id=decision["source_synset_id"],
             S_shared_english_synset_id=decision["shared_english_synset_id"],
             S_review_reason=decision["reason"],
-            annotation_status="manual_C_pending_three_rater_review",
+            annotation_status="generated_C_pending_three_rater_review",
         )
         if status == "NA":
             if decision["source_synset_id"] or decision["shared_english_synset_id"]:

@@ -1,4 +1,4 @@
-"""Build the versioned manual C/S annotations from inspectable CSV inputs."""
+"""Build the versioned AI-generated draft C/S annotations from CSV inputs."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT / "data/final/concepts_zh20_en20_v01.csv"
-RATINGS = ROOT / "data/annotation/manual_ratings_v01.csv"
+RATINGS = ROOT / "data/annotation/generated_ratings_v01.csv"
 TAXONOMY = ROOT / "data/annotation/taxonomy_v01.csv"
 OUTPUT = ROOT / "data/final/concepts_zh20_en20_v02.csv"
 FEATURES = (
@@ -98,16 +98,16 @@ def main() -> None:
         row.update({field: str(value) for field, value in zip(FEATURES, scores)})
         row.update(
             example_sentence=example,
-            feature_provenance="manual",
+            feature_provenance="generated",
             C_score=f"{c_raw[concept_id]:.4f}",
             S_score=str(s_raw[concept_id]),
-            annotation_status="annotated_manual_pending_peer_review",
+            annotation_status="generated_unreviewed_pending_team_annotation",
             specificity_parent=annotation["specificity_parent"],
             specificity_path=" > ".join([*route, concept_id]),
             specificity_method="curated_taxonomy_edge_depth_v01",
             feature_confidence=annotation["confidence"],
             annotation_note=annotation["annotation_note"],
-            example_provenance="manual",
+            example_provenance="generated",
         )
         built.append(row)
 

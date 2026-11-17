@@ -1,6 +1,6 @@
 # Four-step concept review
 
-This review uses the selected-set snapshot at `699396ec098ba9dbc69794b8b968c2acbcc219ab` and follows the requested sequence without treating the existing single-rater scores as three-person consensus. The selected 20 Chinese and 20 English terms in `data/final/` remain unchanged until the team resolves replacements.
+This review uses the selected-set snapshot at `699396ec098ba9dbc69794b8b968c2acbcc219ab` and follows the requested sequence without treating the existing AI-generated draft scores as three-person consensus. The selected 20 Chinese and 20 English terms in `data/final/` remain unchanged until the team resolves replacements.
 
 ## 1. Concept selection audit
 
@@ -24,7 +24,7 @@ To reproduce the Wordnet audit, install `wn==1.1.1`, download `omw-en:2.0` and t
 
 ## 4. C×S feasibility check
 
-[`quadrant_counts_v01.csv`](quadrant_counts_v01.csv) and the [scatter plot](../../reports/pilot_cxs_feasibility_v01.png) use **single-rater v0.2 C** and only the **15 checked noun S** values. They are provisional. C is min–max normalized over all 40 manual rows; S is min–max normalized over the 15 verified noun rows (raw depth 5–8). Values at exactly 0.5 count as high. The exploratory target is at least three concepts per quadrant **within each language**.
+[`quadrant_counts_v01.csv`](quadrant_counts_v01.csv) and the [scatter plot](../../reports/pilot_cxs_feasibility_v01.png) use **AI-generated v0.2 C** and only the **15 checked noun S** values. They are provisional. C is min–max normalized over all 40 generated rows; S is min–max normalized over the 15 verified noun rows (raw depth 5–8). Values at exactly 0.5 count as high. The exploratory target is at least three concepts per quadrant **within each language**.
 
 | Language | Low C / Low S | Low C / High S | High C / Low S | High C / High S | Checked S / 20 |
 | --- | ---: | ---: | ---: | ---: | ---: |

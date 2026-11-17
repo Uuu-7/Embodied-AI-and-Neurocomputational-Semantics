@@ -10,7 +10,7 @@ EAINS 2026 team project on **spatial relation vocabulary**. We are building a bi
 
 ## Scope
 
-The selected working set contains **20 Chinese and 20 English concept senses** from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs. A complete manual first pass of seven feature ratings, examples, and C/S scores is available for peer review.
+The selected working set contains **20 Chinese and 20 English concept senses** from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs. An AI-generated draft of seven feature ratings, examples, and C/S scores is available for peer review; it is not a human annotation.
 
 ## Current contributions
 
@@ -26,7 +26,7 @@ The [four-step concept review](data/review/WORKFLOW.md) now audits a 12-concept 
 
 ## Roadmap
 
-Stages 1–2 are complete. The v0.2 manual annotation is a first pass; the four-step pilot review is prepared, with independent team ratings and the subsequent modelling still pending.
+Stages 1–2 are complete. The v0.2 generated annotation is a draft; the four-step pilot review is prepared, with independent team ratings and the subsequent modelling still pending.
 
 | Stage | Work | Reviewable output |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Stages 5–8 follow the course's cumulative HA2–HA9 sequence. The team can rev
 
 ## Data and review rules
 
-- Keep candidate proposals separate from the selected and scored working datasets. Every current C/S value follows the documented manual feature matrix and curated taxonomy.
+- Keep candidate proposals separate from the selected and scored working datasets. The current C values come from generated draft ratings; the v0.3 review S values follow checked noun paths where available.
 - Label feature values as `sourced`, `manual`, or `generated`; provide a source or annotation note and record low confidence where appropriate.
 - Derive `S` from an inspectable hierarchy. If a sense has no defensible comparable parent path, keep its `S` value missing and explain why.
 - Inspect C × S coverage **after** annotation. Do not adjust ratings solely to populate quadrants.
@@ -55,7 +55,7 @@ The candidate pools and selected concept set are in `main`. Modelling and report
 
 ```text
 candidates/<contributor>/    three independent proposals; Hu's source workbook
-data/annotation/            manual ratings, taxonomy, annotation guide
+data/annotation/            generated draft ratings, taxonomy, annotation guide
 data/final/                 selected and scored bilingual versions, vote audit
 data/review/                concept audit, three rater forms, checked S, C×S feasibility
 scripts/                    reproducible scoring build

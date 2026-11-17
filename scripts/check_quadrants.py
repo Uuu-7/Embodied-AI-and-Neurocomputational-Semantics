@@ -1,4 +1,4 @@
-"""Report provisional C×S coverage from single-rater C and checked noun S."""
+"""Report provisional C×S coverage from generated C and checked noun S."""
 
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def main() -> None:
                     verified_S_rows=str(n),
                     target_minimum="3",
                     meets_target="YES" if count >= 3 else "NO",
-                    C_status="single_rater_manual",
+                    C_status="generated_unreviewed",
                     S_status="checked_OMW_noun_path",
                 )
             )
@@ -70,7 +70,7 @@ def main() -> None:
             ax.annotate(", ".join(ids), (x, y), xytext=(5, 5), textcoords="offset points", fontsize=8)
         ax.axvline(0.5, color="#777777", linewidth=0.8, linestyle="--")
         ax.axhline(0.5, color="#777777", linewidth=0.8, linestyle="--")
-        ax.set(xlim=(-0.05, 1.12), ylim=(-0.05, 1.08), title=f"{language}: {len(subset)} mapped, {20 - len(subset)} S=NA", xlabel="C normalized (single rater)")
+        ax.set(xlim=(-0.05, 1.12), ylim=(-0.05, 1.08), title=f"{language}: {len(subset)} mapped, {20 - len(subset)} S=NA", xlabel="C normalized (AI draft)")
         ax.grid(alpha=0.18)
         ax.text(0.02, 0.96, f"LL {counts[(language, 'Low C / Low S')]}  LH {counts[(language, 'Low C / High S')]}\nHL {counts[(language, 'High C / Low S')]}  HH {counts[(language, 'High C / High S')]}", transform=ax.transAxes, fontsize=9, va="top", bbox=dict(facecolor="white", alpha=0.85, edgecolor="none"))
     axes[0].set_ylabel("S normalized (checked noun depth)")

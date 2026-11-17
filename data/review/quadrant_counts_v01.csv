@@ -1,13 +1,13 @@
 language,quadrant,count,verified_S_rows,target_minimum,meets_target,C_status,S_status
-ZH,Low C / Low S,1,8,3,NO,single_rater_manual,checked_OMW_noun_path
-ZH,Low C / High S,0,8,3,NO,single_rater_manual,checked_OMW_noun_path
-ZH,High C / Low S,5,8,3,YES,single_rater_manual,checked_OMW_noun_path
-ZH,High C / High S,2,8,3,NO,single_rater_manual,checked_OMW_noun_path
-EN,Low C / Low S,1,7,3,NO,single_rater_manual,checked_OMW_noun_path
-EN,Low C / High S,2,7,3,NO,single_rater_manual,checked_OMW_noun_path
-EN,High C / Low S,4,7,3,YES,single_rater_manual,checked_OMW_noun_path
-EN,High C / High S,0,7,3,NO,single_rater_manual,checked_OMW_noun_path
-ALL,Low C / Low S,2,15,3,NO,single_rater_manual,checked_OMW_noun_path
-ALL,Low C / High S,2,15,3,NO,single_rater_manual,checked_OMW_noun_path
-ALL,High C / Low S,9,15,3,YES,single_rater_manual,checked_OMW_noun_path
-ALL,High C / High S,2,15,3,NO,single_rater_manual,checked_OMW_noun_path
+ZH,Low C / Low S,1,8,3,NO,generated_unreviewed,checked_OMW_noun_path
+ZH,Low C / High S,0,8,3,NO,generated_unreviewed,checked_OMW_noun_path
+ZH,High C / Low S,5,8,3,YES,generated_unreviewed,checked_OMW_noun_path
+ZH,High C / High S,2,8,3,NO,generated_unreviewed,checked_OMW_noun_path
+EN,Low C / Low S,1,7,3,NO,generated_unreviewed,checked_OMW_noun_path
+EN,Low C / High S,2,7,3,NO,generated_unreviewed,checked_OMW_noun_path
+EN,High C / Low S,4,7,3,YES,generated_unreviewed,checked_OMW_noun_path
+EN,High C / High S,0,7,3,NO,generated_unreviewed,checked_OMW_noun_path
+ALL,Low C / Low S,2,15,3,NO,generated_unreviewed,checked_OMW_noun_path
+ALL,Low C / High S,2,15,3,NO,generated_unreviewed,checked_OMW_noun_path
+ALL,High C / Low S,9,15,3,YES,generated_unreviewed,checked_OMW_noun_path
+ALL,High C / High S,2,15,3,NO,generated_unreviewed,checked_OMW_noun_path
