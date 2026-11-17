@@ -10,7 +10,7 @@ EAINS 2026 team project on **spatial relation vocabulary**. We are building a bi
 
 ## Scope
 
-The selected working set contains **20 Chinese and 20 English concept senses** from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs. Feature ratings and C/S scores still require group annotation.
+The selected working set contains **20 Chinese and 20 English concept senses** from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs. A complete manual first pass of seven feature ratings, examples, and C/S scores is available for peer review.
 
 ## Current contributions
 
@@ -20,11 +20,11 @@ The selected working set contains **20 Chinese and 20 English concept senses** f
 | Chen Fengru | [Candidate pool](candidates/chenfengru/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/chenfengru/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
 | Hu Jinnan | [Candidate pool](candidates/hujinnan/candidate_pool_zh20_en20_v01.csv), [proposal](candidates/hujinnan/PROPOSAL.md), and [source workbook](candidates/hujinnan/Spatial_Relations_estimates.xlsx) | Merged; 20 Chinese and 20 English candidates |
 
-The [selected dataset](data/final/concepts_zh20_en20_v01.csv), [nomination audit](data/final/nomination_counts_v01.csv), and [selection method](data/final/SELECTION.md) form v0.1 of the team's working concept set. All repeated nominations were included; single-vote ties were resolved with documented scope and coverage criteria. This selects the vocabulary, not final grounding or specificity scores.
+The [scored working dataset](data/final/concepts_zh20_en20_v02.csv) extends the [v0.1 selection](data/final/concepts_zh20_en20_v01.csv), [nomination audit](data/final/nomination_counts_v01.csv), and [selection method](data/final/SELECTION.md). All repeated nominations were included; single-vote ties were resolved with documented scope and coverage criteria. See the [annotation guide](data/annotation/ANNOTATION.md) for the scoring scale, hierarchy, provenance, and review status.
 
 ## Roadmap
 
-Stages 1–2 are complete in the v0.1 concept selection. The annotation, modelling, and evaluation stages follow.
+Stages 1–2 are complete. The v0.2 manual annotation is complete as a first pass; team review and the modelling stages follow.
 
 | Stage | Work | Reviewable output |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Stages 5–8 follow the course's cumulative HA2–HA9 sequence. The team can rev
 
 ## Data and review rules
 
-- Keep candidate proposals separate from the approved final dataset. Do not fill missing `C` or `S` scores by guesswork.
+- Keep candidate proposals separate from the selected and scored working datasets. Every current C/S value follows the documented manual feature matrix and curated taxonomy.
 - Label feature values as `sourced`, `manual`, or `generated`; provide a source or annotation note and record low confidence where appropriate.
 - Derive `S` from an inspectable hierarchy. If a sense has no defensible comparable parent path, keep its `S` value missing and explain why.
 - Inspect C × S coverage **after** annotation. Do not adjust ratings solely to populate quadrants.
@@ -53,7 +53,9 @@ The candidate pools and selected concept set are in `main`. Modelling and report
 
 ```text
 candidates/<contributor>/    three independent proposals; Hu's source workbook
-data/final/                 selected bilingual set, vote audit, selection notes
+data/annotation/            manual ratings, taxonomy, annotation guide
+data/final/                 selected and scored bilingual versions, vote audit
+scripts/                    reproducible scoring build
 notebooks/                  planned scoring, graphs, and evaluation
 reports/                    planned figures, results, and limitations
 ```
