@@ -1,13 +1,13 @@
 # Concept selection and C × S pilot (IN PROGRESS)
 
-**Date:** 2026-11-17. **Source:** the three individual candidate pools in `candidates/`. **Status:** nomination comparison and a 12-concept audit are prepared; an AI-assisted draft in Xia's assigned form awaits her review. Team decisions, independent human ratings, taxonomy verification, and C × S analysis are pending.
+**Date:** 2026-11-17. **Source:** the three individual candidate pools in `candidates/`. **Status:** nomination comparison and a 12-concept audit are prepared; Xia has reviewed the audit and proposed 84 pilot ratings. Chen's and Hu's ratings, team decisions, taxonomy verification, and C × S analysis are pending.
 
 ## Executive diagnostic
 
 - Each member proposed 20 Chinese and 20 English candidates: **120 nomination rows** in total. Normalizing written forms within each language gives **110 distinct forms**, including **10 forms nominated twice** and none nominated three times. These are form counts, not confirmed shared senses.
 - There is **no approved final 40-concept set** after restarting from the three proposals. The pilot samples the union before a full selection.
-- The [pilot audit](../audit/pilot_concept_audit_v01.csv) has **12 concepts** (6 ZH, 6 EN) across geometry, direction, path, force, and social extension. Each definition and provisional decision has been checked against the three proposals and the linked dictionary sense. **Seven are marked keep and five revise**; `team_decision` remains blank.
-- The [three assigned rating forms](../audit/raters/) each contain 84 rows (12 senses × 7 features). Xia's contains an **AI-assisted draft pending her review**; Chen's and Hu's remain blank. Thus there are **no three-person independent human ratings, consensus C scores, or inter-rater agreement values**.
+- The [pilot audit](../audit/pilot_concept_audit_v01.csv) has **12 concepts** (6 ZH, 6 EN) across geometry, direction, path, force, and social extension. Xia reviewed the definitions and provisional decisions and agreed with them. **Seven are marked keep and five revise**; `team_decision` remains blank pending the other members.
+- The [three assigned rating forms](../audit/raters/) each contain 84 rows (12 senses × 7 features). Xia has proposed and reviewed all 84 scores; Chen's and Hu's remain blank. Thus there are **no three-rater agreement values or consensus C scores**.
 - No sense-specific taxonomy edge has yet been independently verified. **S is NA for all pilot concepts**, so a genuine C × S scatter plot and quadrant count cannot yet be produced.
 
 ## Concept selection audit
@@ -33,7 +33,7 @@ The seven channels match the course scheme and PR #7's table structure: **visual
 | 1 | The channel can directly instantiate the sense, but depends on context or is secondary. |
 | 2 | The channel is a characteristic, direct way to identify or enact the sense. |
 
-Each member fills only their own file in `data/audit/raters/`, without seeing the others' ratings first. The existing Xia file is labeled `AI_assisted_draft_pending_Xia_review` on every row and must not be reported as her independent human annotation until she has reviewed or replaced it. `provenance` identifies manual judgment, AI assistance, or a specific source; `reason_or_source` gives a short explanation or citation; `confidence` records high/medium/low. Keep the proposed definition fixed during the independent pass. If an item needs a new sense definition, revise the audit table and repeat that item's rating.
+Each member fills only their own file in `data/audit/raters/`, without seeing the others' ratings first. Xia's reviewed proposal is labeled `Xia_proposal_reviewed` on every row. `provenance` identifies whose proposal or source supports a rating; `reason_or_source` gives a short explanation or citation; `confidence` records high/medium/low. Keep the proposed definition fixed during the independent pass. If an item needs a new sense definition, revise the audit table and repeat that item's rating.
 
 After the three forms are complete, compare disagreements feature by feature. Quadratic-weighted Cohen's κ can be calculated for each rater pair and feature, where its chance-agreement denominator is defined; report `NA` otherwise. Then discuss disagreements and version any adjudicated ratings. Do not label the initial pass as consensus.
 
@@ -47,8 +47,10 @@ After independent rating and adjudication, compute `C_raw_mean = sum(seven score
 
 ## Required team work
 
-- [ ] Review the 12 pilot definitions, grammatical roles, and provisional keep/revise/replace decisions; record external evidence and final team decisions.
-- [ ] Complete three separate seven-feature rating forms with reasons, provenance, and confidence.
+- [x] Xia reviewed the 12 pilot definitions, grammatical roles, and provisional keep/revise/replace decisions.
+- [ ] Chen and Hu review the pilot audit; record final team decisions.
+- [x] Xia proposed and reviewed her seven-feature rating form with reasons, provenance, and confidence.
+- [ ] Chen and Hu complete their separate seven-feature rating forms.
 - [ ] Compare ratings and document disagreement, agreement statistics, and adjudication.
 - [ ] Verify taxonomy edges and source references; leave unsupported S values as `NA`.
 - [ ] Compute actual C × S coverage, then agree on the final 20-ZH + 20-EN dataset and examples.
