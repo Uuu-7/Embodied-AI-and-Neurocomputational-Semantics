@@ -4,7 +4,7 @@
 
 ## Why the earlier PR #7 needed revision
 
-The current `main` (commit `696287bbd97bedf66c7868495b60e4c55a3a2b5b`) restarted the project around **12 pilot senses** from the three independent candidate pools, not the previously drafted "final 20 Chinese + 20 English" list. Consequently, the old PR #7's 40-word AI-generated C results and eight-replacement scenario are **obsolete for the current workflow**.
+The project restarted around **12 pilot senses** from the three independent candidate pools, not the previously drafted "final 20 Chinese + 20 English" list. Consequently, the old PR #7's 40-word generated C results and eight-replacement scenario are **obsolete for the current workflow**.
 
 For provenance, that full original PR branch was preserved at [`archive/chenfengru-pr7-original-40word-pilot-20261117`](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/tree/archive/chenfengru-pr7-original-40word-pilot-20261117) and is **not part of this revised change**.
 
@@ -19,7 +19,7 @@ For provenance, that full original PR branch was preserved at [`archive/chenfeng
 ## Remaining independent work
 
 1. Chen should review these definitions in the pilot audit and independently fill the 84 feature scores, provenance, reason and confidence fields. Use the team's common 0–2 grounding criteria.
-2. Hu's blank form still contains nine definitions inherited from the older candidate versions; **Hu should synchronize his own form** before annotating so all raters score identical senses. Xia's AI-assisted draft already matches the pilot audit, but must not be called independent human ratings before her review.
+2. Hu's blank form still contains nine definitions inherited from the older candidate versions; **Hu should synchronize his own form** before annotating so all raters score identical senses. Xia's reviewed proposal already matches the pilot audit.
 3. `data/audit/pilot_taxonomy_v01.csv` has no verified sense-specific paths yet. **S remains NA**, so **no valid C × S quadrant count exists**.
 4. After independent annotation, compare disagreement, make reviewed C from the adjudicated seven-feature vectors, validate S from sourced edges, then test four-quadrant coverage on the eventual concept selection.
 5. Do not restore or merge the old 40-term provisional C/S numbers or replace the concept inventory solely to make the scatter plot look balanced.
