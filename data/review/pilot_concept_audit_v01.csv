@@ -1,0 +1,13 @@
+concept_id,term,coverage_role,decision,definition_and_pos_review,external_evidence_review,decision_reason,proposed_definition_en
+ZH01,内部,geometry_containment,keep,Noun sense and short noncircular definition agree,COW and OMW noun path matched,Core enclosure contrast,
+ZH03,边界,geometry_boundary,keep,Noun sense and short noncircular definition agree,COW and OMW noun path matched,Core region limit,
+ZH04,阴,topographic_direction,keep,Geographic noun sense must remain distinct from shade,COW available noun has a different sense so S is NA,Retain required geographic contrast but request usage review,
+ZH06,上方,direction_vertical,keep,Locative noun sense is clear,COW custom direction has no shared English noun path,Core vertical relation; request frame evidence,
+ZH02,环绕,path_circumvention,revise,Verb definition mixes static extent and movement,COW verb exists but noun S is not comparable,Use one movement sense in the pilot,To move around a reference entity on multiple sides
+ZH20,失衡,force_equilibrium,keep,Noun sense includes bodily or mechanical equilibrium,No exact COW noun path,Direct proprioceptive contrast,
+ZH16,相邻,geometry_adjacency,replace_proposed,Adjective sense is clear,COW adjective exists but noun S is not comparable,One-vote topology item could yield a social extension slot after team review,
+EN03,contact,geometry_contact,keep,Noun sense and example describe physical touching,OMW noun path matched,Tactile contrast with proximity,
+EN19,through,path_interior_traversal,keep,Preposition sense is spatial rather than temporal,No comparable noun path; seek frame relation evidence,Interior path relation,
+EN17,balance,force_equilibrium,keep,Noun sense is physical equilibrium,OMW noun path matched,Proprioceptive force case,
+EN15,adjacency,geometry_adjacency,replace_proposed,Selected definition allows next-to without touching,Only OMW noun sense requires touching so S is NA,One-vote overlap and sense mismatch make this a replacement candidate,
+EN16,earshot,auditory_spatial_range,keep,Noun sense describes a voice's audible range,OMW noun path matched,Auditory contrast absent elsewhere,

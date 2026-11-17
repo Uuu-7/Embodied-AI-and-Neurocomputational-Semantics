@@ -1,0 +1,41 @@
+concept_id,source_lexicon,source_synset_id,shared_english_synset_id,decision,reason
+ZH01,cow:1.1,cow-08588294-n,omw-en-08588294-n,verified,Enclosed region matches the selected noun sense
+ZH02,,,,NA,Verb hierarchy is not comparable with the shared noun root
+ZH03,cow:1.1,cow-13903079-n,omw-en-13903079-n,verified,Line limiting an area matches the selected noun sense
+ZH04,,,,NA,Available COW noun denotes semidarkness rather than the selected geographic side
+ZH05,,,,NA,Available COW noun denotes the sun rather than the selected geographic side
+ZH06,,,,NA,COW custom direction noun lacks a matched OMW English noun path
+ZH07,,,,NA,COW custom direction noun lacks a matched OMW English noun path
+ZH08,,,,NA,COW noun denotes an object part nearest a viewer rather than the region ahead
+ZH09,,,,NA,No exact COW noun entry for the selected locative sense
+ZH10,cow:1.1,cow-08625462-n,omw-en-08625462-n,verified,Left-side location matches the selected locative noun sense
+ZH11,,,,NA,No exact COW noun entry for the selected locative sense
+ZH12,,,,NA,COW noun denotes an outer surface rather than a region beyond a boundary
+ZH13,cow:1.1,cow-08521816-n,omw-en-08521816-n,verified,Point equidistant from specified limits matches the selected noun sense
+ZH14,cow:1.1,cow-03264542-n,omw-en-03264542-n,verified,Outer limit or peripheral part matches the selected locative noun sense
+ZH15,,,,NA,Function-like relation has no comparable noun-synset path
+ZH16,,,,NA,Adjective relation has no comparable noun-synset path
+ZH17,cow:1.1,cow-05084201-n,omw-en-05084201-n,verified,Space between objects or points matches the selected noun sense
+ZH18,cow:1.1,cow-09387222-n,omw-en-09387222-n,verified,Route along which something moves matches the selected noun sense
+ZH19,cow:1.1,cow-14420074-n,omw-en-14420074-n,verified,Tangency at a point or line matches the selected noun sense
+ZH20,,,,NA,No exact COW noun entry for the selected disequilibrium sense
+EN01,omw-en:2.0,omw-en-08512259-n,omw-en-08512259-n,verified,Line or plane limiting an extent matches the selected noun sense
+EN02,omw-en:2.0,omw-en-08521816-n,omw-en-08521816-n,verified,Point equidistant from specified limits matches the selected noun sense
+EN03,omw-en:2.0,omw-en-14419510-n,omw-en-14419510-n,verified,State of touching matches the selected noun sense
+EN04,omw-en:2.0,omw-en-09387222-n,omw-en-09387222-n,verified,Route along which something moves matches the selected noun sense
+EN05,omw-en:2.0,omw-en-05085867-n,omw-en-05085867-n,verified,Property of close spatial separation matches the selected noun sense
+EN06,,,,NA,Target is a preposition and nominal inside is a different part of speech
+EN07,,,,NA,Target is a preposition and nominal outside is a different part of speech
+EN08,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN09,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN10,,,,NA,Prepositional phrase has no comparable noun-synset path
+EN11,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN12,,,,NA,Prepositional phrase has no comparable noun-synset path
+EN13,,,,NA,Prepositional phrase has no comparable noun-synset path
+EN14,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN15,,,,NA,Only noun synset entails touching but selected sense allows immediate next-to without contact
+EN16,omw-en:2.0,omw-en-08560785-n,omw-en-08560785-n,verified,Audible range of a voice matches the selected noun sense
+EN17,omw-en:2.0,omw-en-14002279-n,omw-en-14002279-n,verified,State of equilibrium matches the selected noun sense
+EN18,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN19,,,,NA,Target is a preposition and available WordNet use is an adverb
+EN20,,,,NA,Prepositional phrase has no comparable noun-synset path

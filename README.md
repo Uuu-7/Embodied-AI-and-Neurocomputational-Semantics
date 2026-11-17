@@ -18,13 +18,15 @@ The selected working set contains **20 Chinese and 20 English concept senses** f
 | --- | --- | --- |
 | Xia Yuqi | [Candidate pool](candidates/xiayuqi/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/xiayuqi/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
 | Chen Fengru | [Candidate pool](candidates/chenfengru/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/chenfengru/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
-| Hu Jinnan | [Candidate pool](candidates/hujinnan/candidate_pool_zh20_en20_v01.csv), [proposal](candidates/hujinnan/PROPOSAL.md), and [source workbook](candidates/hujinnan/Spatial_Relations_estimates.xlsx) | Merged; 20 Chinese and 20 English candidates |
+| Hu Jinnan | [Candidate pool](candidates/hujinnan/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/hujinnan/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
 
 The [scored working dataset](data/final/concepts_zh20_en20_v02.csv) extends the [v0.1 selection](data/final/concepts_zh20_en20_v01.csv), [nomination audit](data/final/nomination_counts_v01.csv), and [selection method](data/final/SELECTION.md). All repeated nominations were included; single-vote ties were resolved with documented scope and coverage criteria. See the [annotation guide](data/annotation/ANNOTATION.md) for the scoring scale, hierarchy, provenance, and review status.
 
+The [four-step concept review](data/review/WORKFLOW.md) now audits a 12-concept pilot, provides separate blank rating forms for all three members, checks source-backed noun S paths, and reports preliminary C×S coverage. Its [v0.3 review table](data/review/concepts_review_v03.csv) marks unverified S as `NA`. The earlier v0.2 S values are exploratory; no three-person consensus rating has been recorded yet.
+
 ## Roadmap
 
-Stages 1–2 are complete. The v0.2 manual annotation is complete as a first pass; team review and the modelling stages follow.
+Stages 1–2 are complete. The v0.2 manual annotation is a first pass; the four-step pilot review is prepared, with independent team ratings and the subsequent modelling still pending.
 
 | Stage | Work | Reviewable output |
 | --- | --- | --- |
@@ -55,6 +57,7 @@ The candidate pools and selected concept set are in `main`. Modelling and report
 candidates/<contributor>/    three independent proposals; Hu's source workbook
 data/annotation/            manual ratings, taxonomy, annotation guide
 data/final/                 selected and scored bilingual versions, vote audit
+data/review/                concept audit, three rater forms, checked S, C×S feasibility
 scripts/                    reproducible scoring build
 notebooks/                  planned scoring, graphs, and evaluation
 reports/                    planned figures, results, and limitations
