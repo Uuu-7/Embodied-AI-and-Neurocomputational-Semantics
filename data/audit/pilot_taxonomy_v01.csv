@@ -1,13 +1,13 @@
-pilot_id,language,term,target_part_of_speech,lexical_or_ontology_resource,sense_id,direct_parent,root_to_sense_path,edge_type,source_reference,S_score,S_status,review_note
-P01,ZH,内部,noun,,,,,,,NA,pending_verification,
-P02,ZH,阴,noun,,,,,,,NA,pending_verification,
-P03,ZH,阳,noun,,,,,,,NA,pending_verification,
-P04,ZH,环绕,verb,,,,,,,NA,pending_verification,
-P05,ZH,失衡,noun,,,,,,,NA,pending_verification,
-P06,ZH,归属,noun,,,,,,,NA,pending_verification,
-P07,EN,boundary,noun,,,,,,,NA,pending_verification,
-P08,EN,above,preposition,,,,,,,NA,pending_verification,
-P09,EN,path,noun,,,,,,,NA,pending_verification,
-P10,EN,contact,noun,,,,,,,NA,pending_verification,
-P11,EN,balance,noun,,,,,,,NA,pending_verification,
-P12,EN,belonging,noun,,,,,,,NA,pending_verification,
+﻿pilot_id,language,term,target_part_of_speech,lexical_or_ontology_resource,sense_id,direct_parent,root_to_sense_path,edge_type,source_reference,S_score,S_status,review_note
+P01,ZH,内部,noun,COW 1.1 + OMW English 2.0,cow-08588294-n -> omw-en-08588294-n,omw-en-08630039-n,omw-en-00001740-n > omw-en-00001930-n > omw-en-00002684-n > omw-en-00027167-n > omw-en-08630039-n > omw-en-08588294-n,hypernym,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,5,verified_database_noun_depth,Shortest hypernym path to entity; S is number of edges. Sense-specific English gloss: the region that is inside of something
+P02,ZH,阴,noun,COW 1.1 + OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,COW noun 阴 maps to a different sense; geographic north-mountain/south-river sense is absent.
+P03,ZH,阳,noun,COW 1.1 + OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,COW noun 阳 maps to sun; geographic south-mountain/north-river sense is absent.
+P04,ZH,环绕,verb,COW 1.1 + OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,"COW verb entries mean encircle or move in circles, neither explicitly moving around a physical reference entity; verb paths also lack the English noun entity root."
+P05,ZH,失衡,noun,COW 1.1 + OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,target_lexeme_not_found,COW has no noun synset for 失衡.
+P06,ZH,归属,noun,COW 1.1 + OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,COW noun 归属 entries do not establish the target social group-membership sense; no validated mapping.
+P07,EN,boundary,noun,OMW English 2.0,omw-en-08512259-n,omw-en-08568978-n,omw-en-00001740-n > omw-en-00001930-n > omw-en-00002684-n > omw-en-00027167-n > omw-en-08630039-n > omw-en-08568978-n > omw-en-08512259-n,hypernym,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,6,verified_database_noun_depth,Shortest hypernym path to entity; S is number of edges. Sense-specific English gloss: the line or plane indicating the limit or extent of something
+P08,EN,above,preposition,OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,target_part_of_speech_not_found,OMW English has no preposition synset for above; adverb and nonspatial senses cannot supply comparable noun depth.
+P09,EN,path,noun,OMW English 2.0,omw-en-09387222-n,omw-en-08593262-n,omw-en-00001740-n > omw-en-00001930-n > omw-en-00002684-n > omw-en-00027167-n > omw-en-08593262-n > omw-en-09387222-n,hypernym,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,5,verified_database_noun_depth,Shortest hypernym path to entity; S is number of edges. Sense-specific English gloss: a line or route along which something travels or moves
+P10,EN,contact,noun,OMW English 2.0,omw-en-14419510-n,omw-en-14419164-n,omw-en-00001740-n > omw-en-00002137-n > omw-en-00024264-n > omw-en-00024720-n > omw-en-14418395-n > omw-en-14419164-n > omw-en-14419510-n,hypernym,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,6,verified_database_noun_depth,Shortest hypernym path to entity; S is number of edges. Sense-specific English gloss: the state or condition of touching or of being in immediate proximity
+P11,EN,balance,noun,OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,OMW English balance noun includes general equilibrium but does not specify bodily ability to remain upright.
+P12,EN,belonging,noun,OMW English 2.0,,,,,local wn_data: cow:1.1 / omw-en:2.0; https://github.com/bond-lab/cow; https://omwn.org/,NA,lexeme_found_no_target_sense,"OMW English belonging noun denotes happiness in a secure relationship, not specifically group acceptance."
