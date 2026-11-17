@@ -10,19 +10,21 @@ EAINS 2026 team project on **spatial relation vocabulary**. We are building a bi
 
 ## Scope
 
-The agreed final dataset target is **20 Chinese and 20 English concept senses**. We will select them from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs.
+The selected working set contains **20 Chinese and 20 English concept senses** from three independent candidate pools. A record represents a specified sense in context, so similar spellings, translations, and literal or extended uses are reviewed separately. The two languages need not form 20 exact translation pairs. Feature ratings and C/S scores still require group annotation.
 
 ## Current contributions
 
-| Member | Working contribution | Status |
+| Member | Candidate contribution | Status |
 | --- | --- | --- |
-| Xia Yuqi | [Spatial relation candidate proposal, PR #2](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/pull/2) | Draft; 20 Chinese and 20 English candidates |
-| Chen Fengru | [Candidate proposal, PR #1](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/pull/1) | Draft; 20 Chinese and 20 English candidates |
-| Hu Jinnan | [Estimates workbook on the `40words` branch](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/blob/40words/Spatial_Relations_estimates.xlsx) | Working file uploaded; candidate format and review still pending |
+| Xia Yuqi | [Candidate pool](candidates/xiayuqi/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/xiayuqi/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
+| Chen Fengru | [Candidate pool](candidates/chenfengru/candidate_pool_zh20_en20_v01.csv) and [proposal](candidates/chenfengru/PROPOSAL.md) | Merged; 20 Chinese and 20 English candidates |
+| Hu Jinnan | [Candidate pool](candidates/hujinnan/candidate_pool_zh20_en20_v01.csv), [proposal](candidates/hujinnan/PROPOSAL.md), and [source workbook](candidates/hujinnan/Spatial_Relations_estimates.xlsx) | Merged; 20 Chinese and 20 English candidates |
 
-As of 2026-11-17, these are separate contributions. No final group dataset has been selected or merged into `main`.
+The [selected dataset](data/final/concepts_zh20_en20_v01.csv), [nomination audit](data/final/nomination_counts_v01.csv), and [selection method](data/final/SELECTION.md) form v0.1 of the team's working concept set. All repeated nominations were included; single-vote ties were resolved with documented scope and coverage criteria. This selects the vocabulary, not final grounding or specificity scores.
 
 ## Roadmap
+
+Stages 1–2 are complete in the v0.1 concept selection. The annotation, modelling, and evaluation stages follow.
 
 | Stage | Work | Reviewable output |
 | --- | --- | --- |
@@ -45,15 +47,14 @@ Stages 5–8 follow the course's cumulative HA2–HA9 sequence. The team can rev
 - Inspect C × S coverage **after** annotation. Do not adjust ratings solely to populate quadrants.
 - Version the final data, document normalization and weights, keep random seeds where used, and report baselines, failed cases, and limits of the conclusions.
 
-## Planned repository layout
+## Repository layout
 
-Candidate files currently live on contributor branches. After group review, the repository can add:
+The candidate pools and selected concept set are in `main`. Modelling and report directories are planned for later stages:
 
 ```text
-candidates/<contributor>/    independent proposals
-data/final/                 approved bilingual dataset and annotation guide
-notebooks/                  scoring, graphs, and evaluation
-reports/                    figures, results, and limitations
+candidates/<contributor>/    three independent proposals; Hu's source workbook
+data/final/                 selected bilingual set, vote audit, selection notes
+notebooks/                  planned scoring, graphs, and evaluation
+reports/                    planned figures, results, and limitations
 ```
 
-The proposed directories are a roadmap, not a claim that the files already exist.
