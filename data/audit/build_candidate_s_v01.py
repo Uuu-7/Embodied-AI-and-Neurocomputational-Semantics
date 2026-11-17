@@ -26,6 +26,7 @@ parser.add_argument('--wn-data-dir', required=True)
 parser.add_argument('--repo', required=True)
 parser.add_argument('--output-dir', required=True)
 parser.add_argument('--cygnet-db', required=True)
+parser.add_argument('--reviewed-workbook', help='Optional earlier workbook whose user keep marks are preserved')
 args = parser.parse_args()
 os.environ['WN_DATA_DIR'] = args.wn_data_dir
 import wn
@@ -131,7 +132,7 @@ for person in ('chenfengru','hujinnan','xiayuqi'):
             'native_sense_id':'', 'shared_english_sense_id':'', 'source_gloss_en':'',
             'direct_parent':'', 'root_to_sense_path':'', 'S_status':'', 'S_audit_note':'',
             'cygnet_exact_form_hits':'', 'other_noun_glosses':'',
-            '用户审阅（无S词保留请填keep）':'',
+            'user_review_keep_if_S_missing':'',
         }
         if row['language']=='ZH':
             audit['cygnet_exact_form_hits']=str(cygnet.execute(cygnet_sql,(row['term'],row['term'])).fetchone()[0])
@@ -192,47 +193,59 @@ columns=['contributor','candidate_id','language','term','pinyin','part_of_speech
          'subfamily','image_schema_candidate','channels_to_review','metaphorical_extension_or_scope',
          'individual_lexical_source_verified','C_score','S_score','review_status','database_version',
          'native_sense_id','shared_english_sense_id','source_gloss_en','direct_parent','root_to_sense_path',
-         'S_status','S_audit_note','cygnet_exact_form_hits','other_noun_glosses','用户审阅（无S词保留请填keep）']
+         'S_status','S_audit_note','cygnet_exact_form_hits','other_noun_glosses','user_review_keep_if_S_missing']
 with (outdir/'candidate_S_combined_v01.csv').open('w',encoding='utf-8-sig',newline='') as f:
     writer=csv.DictWriter(f,fieldnames=columns)
     writer.writeheader();writer.writerows(combined)
 
 from openpyxl import Workbook
+from openpyxl import load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
-status_zh={
-    'verified_shared_noun_depth':'有效 S',
-    'target_pos_not_comparable_with_noun_root':'目标词性与名词根深度不可比较',
-    'lexeme_not_found_in_primary_wordnet':'主词网未查到目标词形',
-    'target_sense_not_found':'查到词形，但没有对应目标义项',
-    'spatial_sense_no_shared_english_path':'查到空间义项，但没有共享英语上位路径',
-    'target_noun_sense_not_found':'查到词形，但没有目标名词义项',
+review_marks={}
+if args.reviewed_workbook:
+    prior=load_workbook(args.reviewed_workbook,read_only=True,data_only=True).active
+    for old in list(prior.values)[1:]:
+        mark=str(old[16]).strip().lower() if old[16] is not None else ''
+        assert mark in ('','keep')
+        if mark:
+            review_marks[(old[0],old[1])]=mark
+assert len(review_marks) in (0,8)
+
+status_en={
+    'verified_shared_noun_depth':'Validated S',
+    'target_pos_not_comparable_with_noun_root':'Target POS is not comparable with noun-root depth',
+    'lexeme_not_found_in_primary_wordnet':'Target form not found in the primary wordnet',
+    'target_sense_not_found':'Form found, but target sense not found',
+    'spatial_sense_no_shared_english_path':'Spatial sense found, but no shared English hypernym path',
+    'target_noun_sense_not_found':'Form found, but target noun sense not found',
 }
-note_zh={
-    'verified_shared_noun_depth':'匹配目标名词义项；S 为至 entity 根的最短 hypernym 边数。',
-    'target_pos_not_comparable_with_noun_root':'目标义项不是可比的名词义项；保留 NA，不能借用同形名词的层级。',
-    'lexeme_not_found_in_primary_wordnet':'COW／OMW 固定版本未命中该完整词形。',
-    'target_sense_not_found':'词形命中，但现有义项与表中的目标定义不符。',
-    'spatial_sense_no_shared_english_path':'COW 有中文空间名词义项，但不能映射到本表统一使用的英语 entity 上位图。',
-    'target_noun_sense_not_found':'词形命中，但没有可匹配的目标名词义项。',
+note_en={
+    'verified_shared_noun_depth':'Target noun sense matched; S is the shortest hypernym edge count to entity.',
+    'target_pos_not_comparable_with_noun_root':'The target is not a comparable noun sense; do not borrow depth from a homographic noun.',
+    'lexeme_not_found_in_primary_wordnet':'The exact written form is absent from the fixed COW/OMW release.',
+    'target_sense_not_found':'The form is present, but its available senses do not match the target definition.',
+    'spatial_sense_no_shared_english_path':'COW has a Chinese spatial noun sense, but it has no path in the shared English entity graph.',
+    'target_noun_sense_not_found':'The form is present, but no matching target noun sense was found.',
 }
-wb=Workbook();ws=wb.active;ws.title='三人S汇总'
-headers=['候选者','编号','语言','词','词性','目标义（英文）','S','S核查状态','S来源版本','中文说明',
-         '原词网义项ID','共享英语义项ID','英语词网释义','其他名词候选释义','根至义项路径',
-         'Cygnet词形命中数（不参与S）','用户审阅：无S词保留请填keep']
+wb=Workbook();ws=wb.active;ws.title='Three-Person S Audit'
+headers=['Contributor','Candidate ID','Language','Term','Part of speech','Target sense definition (EN)',
+         'S depth','S audit status','S source version','Audit note','Native sense ID',
+         'Shared English sense ID','English wordnet gloss','Other noun candidate glosses',
+         'Root-to-sense path','Cygnet exact-form hits (not S)','User review: keep if S missing']
 ws.append(headers)
 for r in combined:
-    note=note_zh[r['S_status']]
+    note=note_en[r['S_status']]
     if r['contributor']=='chenfengru' and r['candidate_id'] in ('ZH18','EN17','EN20'):
-        note+=' 当前目标义偏抽象或隐喻，空间定义域仍需团队确认。'
+        note+=' The target sense is abstract or metaphorical; its spatial scope still needs team review.'
     ws.append([r['contributor'],r['candidate_id'],r['language'],r['term'],r['part_of_speech'],
                r['target_sense_definition_en'],int(r['S_score']) if r['S_score']!='NA' else 'NA',
-               status_zh[r['S_status']],r['database_version'],note,r['native_sense_id'],r['shared_english_sense_id'],
+               status_en[r['S_status']],r['database_version'],note,r['native_sense_id'],r['shared_english_sense_id'],
                r['source_gloss_en'],r['other_noun_glosses'] if r['S_score']=='NA' else '',
                r['root_to_sense_path'],int(r['cygnet_exact_form_hits']) if r['cygnet_exact_form_hits'] else '',
-               ''])
+               review_marks.get((r['contributor'],r['candidate_id']), '')])
 ws.freeze_panes='G2';ws.auto_filter.ref=f'A1:Q{ws.max_row}'
 for cell in ws[1]:
     cell.font=Font(bold=True,color='FFFFFF')
@@ -250,7 +263,7 @@ for row in ws.iter_rows(min_row=2):
 for idx,width in enumerate([16,9,8,18,18,52,9,35,30,65,24,25,55,55,90,26,37],1):
     ws.column_dimensions[get_column_letter(idx)].width=width
 dv=DataValidation(type='list',formula1='"keep"',allow_blank=True)
-dv.error='只填写 keep，或保持空白';dv.errorTitle='审阅标记';dv.showErrorMessage=True
+dv.error='Enter keep or leave the cell blank.';dv.errorTitle='User review';dv.showErrorMessage=True
 ws.add_data_validation(dv);dv.add('Q2:Q121')
 wb.save(outdir/'candidate_S_combined_v01.xlsx')
 for person in LOCKS:

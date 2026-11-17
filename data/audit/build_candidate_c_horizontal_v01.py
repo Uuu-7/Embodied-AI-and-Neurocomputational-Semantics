@@ -19,19 +19,20 @@ args=parser.parse_args()
 source=Path(args.source)
 output=Path(args.output)
 original=load_workbook(source,read_only=True,data_only=True)
-assert original.sheetnames==['筛选去重结果']
+assert original.sheetnames==['Reviewed Unique 58']
 rows=list(original.active.values)
-expected=['序号','语言','词汇','词性','目标义（英文）','S','保留依据','S核查说明',
-          '代表候选者','原候选ID','同词提名来源','合并提名数','原词网义项ID',
-          '共享英语义项ID','英语词网释义','根至义项路径']
+expected=['Index','Language','Term','Part of speech','Target sense definition (EN)',
+          'S depth','S-stage retention basis','S audit note','Representative contributor',
+          'Original candidate ID','Nomination sources','Merged nomination count',
+          'Native sense ID','Shared English sense ID','English wordnet gloss','Root-to-sense path']
 assert list(rows[0])==expected
 assert len(rows)==59 and len({(r[1],r[2]) for r in rows[1:]})==58
 
-book=Workbook();sheet=book.active;sheet.title='58词C横向评分'
-headers=['序号','语言','词汇','词性','目标义（英文）','S','保留依据',
-         '视觉 visual','听觉 auditory','触觉 tactile','动作 motor',
-         '本体感觉 proprioceptive','内感受 interoceptive','社会 social',
-         'C_raw_mean','C_unit','评分依据／来源','置信度','评分者','同词提名来源','共享英语义项ID']
+book=Workbook();sheet=book.active;sheet.title='C Rating Template 58'
+headers=['Index','Language','Term','Part of speech','Target sense definition (EN)',
+         'S depth','S-stage retention basis','Visual','Auditory','Tactile','Motor',
+         'Proprioceptive','Interoceptive','Social','C raw mean','C unit',
+         'Rating evidence or source','Confidence','Rater','Nomination sources','Shared English sense ID']
 sheet.append(headers)
 for i,record in enumerate(rows[1:],2):
     sheet.append([record[0],record[1],record[2],record[3],record[4],record[5],record[6],
@@ -47,16 +48,16 @@ for cell in sheet[1]:
     cell.fill=PatternFill('solid',fgColor='315A70')
     cell.alignment=Alignment(wrap_text=True,vertical='center')
 sheet.row_dimensions[1].height=42
-rubric=('给指定的目标义项逐维评分：0＝该通道不参与目标义；'
-       '1＝该通道可直接体现目标义，但依赖语境或处于次要位置；'
-       '2＝该通道是识别或实现目标义的典型直接方式。'
-       '请填写评分依据／来源；不要为了提高多样性调整分数。')
+rubric=('Rate the specified target sense: 0 = the channel does not contribute; '
+       '1 = it can directly instantiate the sense but is context-dependent or secondary; '
+       '2 = it is a characteristic direct way to identify or enact the sense. '
+       'Record evidence and do not alter scores to force diversity.')
 for col in range(8,15):
-    sheet.cell(1,col).comment=Comment(rubric,'项目评分规则')
-sheet['O1'].comment=Comment('七维均填 0–2 后自动显示：七维总和 ÷ 7。未评完保持空白。','项目评分规则')
-sheet['P1'].comment=Comment('七维均填 0–2 后自动显示：七维总和 ÷ 14。未评完保持空白。','项目评分规则')
+    sheet.cell(1,col).comment=Comment(rubric,'Project scoring guide')
+sheet['O1'].comment=Comment('After all seven scores are filled: sum of scores / 7.','Method')
+sheet['P1'].comment=Comment('After all seven scores are filled: sum of scores / 14.','Method')
 score_validation=DataValidation(type='list',formula1='"0,1,2"',allow_blank=True)
-score_validation.error='只能填 0、1 或 2';score_validation.errorTitle='C 评分';score_validation.showErrorMessage=True
+score_validation.error='Enter 0, 1, or 2.';score_validation.errorTitle='C rating';score_validation.showErrorMessage=True
 sheet.add_data_validation(score_validation);score_validation.add(f'H2:N{sheet.max_row}')
 confidence_validation=DataValidation(type='list',formula1='"high,medium,low"',allow_blank=True)
 sheet.add_data_validation(confidence_validation);confidence_validation.add(f'R2:R{sheet.max_row}')

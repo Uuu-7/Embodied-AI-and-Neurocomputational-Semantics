@@ -20,12 +20,14 @@ args=parser.parse_args()
 source=Path(args.source)
 output=Path(args.output)
 wb=load_workbook(source,read_only=True,data_only=True)
-assert wb.sheetnames==['三人S汇总']
+assert wb.sheetnames==['Three-Person S Audit']
 sheet=wb.active
 headers=[c.value for c in sheet[1]]
-assert headers==['候选者','编号','语言','词','词性','目标义（英文）','S','S核查状态','S来源版本',
-                '中文说明','原词网义项ID','共享英语义项ID','英语词网释义','其他名词候选释义',
-                '根至义项路径','Cygnet词形命中数（不参与S）','用户审阅：无S词保留请填keep']
+assert headers==['Contributor','Candidate ID','Language','Term','Part of speech',
+                'Target sense definition (EN)','S depth','S audit status','S source version',
+                'Audit note','Native sense ID','Shared English sense ID','English wordnet gloss',
+                'Other noun candidate glosses','Root-to-sense path',
+                'Cygnet exact-form hits (not S)','User review: keep if S missing']
 rows=list(sheet.values)[1:]
 assert len(rows)==120
 assert all(str(r[16]).strip().lower() in ('','keep','none') for r in rows)
@@ -42,16 +44,17 @@ for (language,term),group in groups.items():
     if len(group)>1:
         assert len({(r[6],r[11]) for r in group})==1,(language,term,'conflicting senses or S')
     representative=min(group,key=lambda r:priority[r[0]])
-    status='用户标记 keep（S 缺失）' if representative[6]=='NA' else '有效 S'
-    provenance='；'.join(f'{r[0]}:{r[1]}' for r in group)
+    status='User keep (S missing)' if representative[6]=='NA' else 'Validated S'
+    provenance='; '.join(f'{r[0]}:{r[1]}' for r in group)
     result.append((language,term,representative,status,provenance,len(group)))
-result.sort(key=lambda x:(0 if x[0]=='ZH' else 1,0 if x[3]=='有效 S' else 1,
+result.sort(key=lambda x:(0 if x[0]=='ZH' else 1,0 if x[3]=='Validated S' else 1,
                           priority[x[2][0]],int(x[2][1][2:])))
 
-out=Workbook();ws=out.active;ws.title='筛选去重结果'
-ws.append(['序号','语言','词汇','词性','目标义（英文）','S','保留依据','S核查说明',
-           '代表候选者','原候选ID','同词提名来源','合并提名数','原词网义项ID',
-           '共享英语义项ID','英语词网释义','根至义项路径'])
+out=Workbook();ws=out.active;ws.title='Reviewed Unique 58'
+ws.append(['Index','Language','Term','Part of speech','Target sense definition (EN)',
+           'S depth','S-stage retention basis','S audit note','Representative contributor',
+           'Original candidate ID','Nomination sources','Merged nomination count',
+           'Native sense ID','Shared English sense ID','English wordnet gloss','Root-to-sense path'])
 for i,(language,term,r,status,provenance,count) in enumerate(result,1):
     ws.append([i,language,term,r[4],r[5],r[6],status,r[9],r[0],r[1],provenance,
                count,r[10],r[11],r[12],r[14]])
