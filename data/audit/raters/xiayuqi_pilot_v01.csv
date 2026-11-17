@@ -1,85 +1,85 @@
 ﻿rater,pilot_id,language,term,target_part_of_speech,proposed_definition_en,feature,score_0_2,provenance,reason_or_source,confidence
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,visual,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,auditory,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,tactile,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,motor,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,proprioceptive,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,interoceptive,,,,
-xiayuqi,P01,ZH,内部,noun,A region enclosed by a reference entity,social,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,visual,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,auditory,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,tactile,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,motor,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,proprioceptive,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,interoceptive,,,,
-xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,social,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,visual,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,auditory,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,tactile,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,motor,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,proprioceptive,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,interoceptive,,,,
-xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,social,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,visual,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,auditory,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,tactile,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,motor,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,proprioceptive,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,interoceptive,,,,
-xiayuqi,P04,ZH,环绕,verb,To move around a reference entity on multiple sides,social,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,visual,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,auditory,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,tactile,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,motor,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,proprioceptive,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,interoceptive,,,,
-xiayuqi,P05,ZH,失衡,noun,A loss of bodily or mechanical equilibrium under competing forces,social,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,visual,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,auditory,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,tactile,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,motor,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,proprioceptive,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,interoceptive,,,,
-xiayuqi,P06,ZH,归属,noun,A recognized or felt connection to a group or community,social,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,visual,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,auditory,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,tactile,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,motor,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,proprioceptive,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,interoceptive,,,,
-xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,social,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,visual,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,auditory,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,tactile,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,motor,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,proprioceptive,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,interoceptive,,,,
-xiayuqi,P08,EN,above,preposition,At a higher position than a reference entity along a vertical axis,social,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,visual,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,auditory,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,tactile,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,motor,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,proprioceptive,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,interoceptive,,,,
-xiayuqi,P09,EN,path,noun,A route connecting positions through space,social,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,visual,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,auditory,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,tactile,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,motor,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,proprioceptive,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,interoceptive,,,,
-xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces meet,social,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,visual,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,auditory,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,tactile,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,motor,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,proprioceptive,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,interoceptive,,,,
-xiayuqi,P11,EN,balance,noun,A state of bodily or mechanical stability under competing forces,social,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,visual,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,auditory,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,tactile,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,motor,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,proprioceptive,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,interoceptive,,,,
-xiayuqi,P12,EN,belonging,noun,A recognized or felt connection to a group or community,social,,,,
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,visual,2,AI_assisted_draft_pending_Xia_review,A bounded interior is directly identified by visible layout.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P01,ZH,内部,noun,The region within the boundary of a physical entity,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,visual,1,AI_assisted_draft_pending_Xia_review,A map or oriented landscape can show the specified side; the convention still needs geographic context.,medium
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P02,ZH,阴,noun,The north side of a mountain or south side of a river in geographic usage,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,visual,1,AI_assisted_draft_pending_Xia_review,A map or oriented landscape can show the specified side; the convention still needs geographic context.,medium
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P03,ZH,阳,noun,The south side of a mountain or north side of a river in geographic usage,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,visual,2,AI_assisted_draft_pending_Xia_review,The route around the referent can be seen.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,motor,2,AI_assisted_draft_pending_Xia_review,Moving around the referent enacts this sense.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,proprioceptive,1,AI_assisted_draft_pending_Xia_review,Body position can track progress around the referent in a moving example.,medium
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P04,ZH,环绕,verb,To move along a route around a physical reference entity,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,visual,1,AI_assisted_draft_pending_Xia_review,Swaying can make bodily instability visible.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,motor,1,AI_assisted_draft_pending_Xia_review,Corrective movements can directly accompany losing balance.,medium
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,proprioceptive,2,AI_assisted_draft_pending_Xia_review,Loss of bodily stability is directly sensed through body position and effort.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P05,ZH,失衡,noun,A loss of bodily stability while standing or moving,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,visual,0,AI_assisted_draft_pending_Xia_review,The specified sense does not require a visible form or layout.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P06,ZH,归属,noun,The state of belonging to a group or community,social,2,AI_assisted_draft_pending_Xia_review,Group affiliation is defined through a social membership relation.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,visual,2,AI_assisted_draft_pending_Xia_review,A physical region limit can be seen as a line or surface.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,tactile,1,AI_assisted_draft_pending_Xia_review,A material boundary can be felt by touch in some contexts.,medium
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P07,EN,boundary,noun,A line or surface marking the limit of a physical region,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,visual,2,AI_assisted_draft_pending_Xia_review,Vertical relative position is directly visible.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,proprioceptive,1,AI_assisted_draft_pending_Xia_review,Body orientation can support judging a higher physical position.,medium
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P08,EN,above,preposition,At a higher position than a physical reference entity along a vertical axis,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,visual,2,AI_assisted_draft_pending_Xia_review,A physical route can be seen or mapped.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,motor,1,AI_assisted_draft_pending_Xia_review,Following a route can enact the path relation.,medium
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P09,EN,path,noun,A route connecting positions through physical space,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,visual,1,AI_assisted_draft_pending_Xia_review,The meeting of surfaces can often be seen.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,tactile,2,AI_assisted_draft_pending_Xia_review,Touch directly identifies physical surface contact.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P10,EN,contact,noun,A state in which two physical surfaces touch,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,visual,1,AI_assisted_draft_pending_Xia_review,Posture can visibly indicate bodily balance.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,motor,1,AI_assisted_draft_pending_Xia_review,Small corrective movements can maintain upright balance.,medium
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,proprioceptive,2,AI_assisted_draft_pending_Xia_review,Body position and stability are central to remaining upright.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,interoceptive,0,AI_assisted_draft_pending_Xia_review,An internal bodily feeling is not required by the specified sense.,high
+xiayuqi,P11,EN,balance,noun,The ability to remain upright without falling,social,0,AI_assisted_draft_pending_Xia_review,An interpersonal role or norm is not part of the specified sense.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,visual,0,AI_assisted_draft_pending_Xia_review,The specified sense does not require a visible form or layout.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,auditory,0,AI_assisted_draft_pending_Xia_review,Sound is not part of the specified sense.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,tactile,0,AI_assisted_draft_pending_Xia_review,Touch is not required by the specified sense.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,motor,0,AI_assisted_draft_pending_Xia_review,Enacted movement is not part of the specified sense.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,proprioceptive,0,AI_assisted_draft_pending_Xia_review,Body position or effort is not part of the specified sense.,high
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,interoceptive,1,AI_assisted_draft_pending_Xia_review,A felt sense of acceptance can involve an internal emotional state.,medium
+xiayuqi,P12,EN,belonging,noun,A feeling of being accepted as part of a group,social,2,AI_assisted_draft_pending_Xia_review,Acceptance by a group is central to the defined sense.,high

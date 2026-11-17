@@ -31,7 +31,7 @@ The [nomination comparison](data/audit/term_vote_counts_v01.csv) contains 120 no
 | 5. Final dataset | Agree on 20 Chinese and 20 English senses, examples, seven-feature annotations, and source notes. | Versioned team dataset and data dictionary |
 | 6. Course prototype and evaluation | Build the simulator, semantic graph, contrast cases, and reproducible evaluation required by later assignments. | Notebook or app, figures, report, and limitations |
 
-The pilot form files are under [`data/audit/raters/`](data/audit/raters/). They intentionally contain blank scores. No aggregate C, specificity S, agreement statistic, or quadrant count should be reported as an observed result until the required inputs are available.
+The pilot form files are under [`data/audit/raters/`](data/audit/raters/). Xia's file contains an explicitly labeled AI-assisted draft for her review; the other two forms remain blank. No aggregate C, specificity S, agreement statistic, or quadrant count should be reported as a group-observed result until the required inputs are available.
 
 ## Repository layout
 
