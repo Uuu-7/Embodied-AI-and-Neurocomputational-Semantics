@@ -2,6 +2,8 @@
 
 The [v0.2 working dataset](../final/concepts_zh20_en20_v02.csv) contains 20 Chinese and 20 English selected senses with seven grounding ratings, one usage example per sense, and separate C and S scores. It extends the unchanged [v0.1 selection](../final/concepts_zh20_en20_v01.csv).
 
+**Review update:** v0.2's S values came from a hand-built hierarchy. The later [four-step evidence review](../review/WORKFLOW.md) supersedes those exploratory S values for taxonomy-based analysis: its [v0.3 review table](../review/concepts_review_v03.csv) records verified noun paths and sets unmatched S to `NA`. The v0.2 C values remain a single-rater first pass pending independent team annotation.
+
 ## Seven grounding channels
 
 Each channel is a manually judged estimate for the **defined sense**, not for every possible use of the spelling. A cue is direct when a perceptual, bodily, or action event could instantiate it. Apply the same scale to all channels:
