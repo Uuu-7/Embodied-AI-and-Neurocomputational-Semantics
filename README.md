@@ -18,7 +18,7 @@ The agreed final dataset target is **20 Chinese and 20 English concept senses**.
 | --- | --- | --- |
 | Xia Yuqi | [Spatial relation candidate proposal, PR #2](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/pull/2) | Draft; 20 Chinese and 20 English candidates |
 | Chen Fengru | [Candidate proposal, PR #1](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/pull/1) | Draft; 20 Chinese and 20 English candidates |
-| Hu Jinnan | [Estimates workbook on the `40words` branch](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/tree/40words) | Working file uploaded; candidate format and review still pending |
+| Hu Jinnan | [Estimates workbook on the `40words` branch](https://github.com/Uuu-7/Embodied-AI-and-Neurocomputational-Semantics/blob/40words/Spatial_Relations_estimates.xlsx) | Working file uploaded; candidate format and review still pending |
 
 As of 2026-11-17, these are separate contributions. No final group dataset has been selected or merged into `main`.
 
