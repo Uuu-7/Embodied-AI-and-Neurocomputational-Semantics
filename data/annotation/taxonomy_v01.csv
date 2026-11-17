@@ -1,0 +1,32 @@
+node_id,parent_id,description
+spatial_relation,,A relation between locations regions objects or bodily configurations
+region_relation,spatial_relation,A relation identifying a spatial region or part of one
+containment_relation,region_relation,A relation to a bounded region
+bounded_interior,containment_relation,A region enclosed by a boundary
+exterior_relation,containment_relation,A region beyond a boundary
+figural_part,region_relation,A part identified relative to a figure's extent
+center_part,figural_part,A central part of a figure
+edge_part,figural_part,A peripheral part of a figure
+intervening_region,region_relation,A region constrained by two reference entities
+topographic_aspect,region_relation,A geographically oriented aspect of terrain
+terrain_side,topographic_aspect,A mountain or river side distinguished by orientation
+auditory_region,region_relation,A region determined by audibility
+direction_relation,spatial_relation,A position relative to an oriented axis
+vertical_relation,direction_relation,A position on the up or down axis
+front_back_relation,direction_relation,A position on the facing axis
+lateral_relation,direction_relation,A position on the left or right axis
+path_relation,spatial_relation,A route or movement relation through space
+circumventing_path,path_relation,A route going around a reference entity
+crossing_path,path_relation,A route to the opposite side of a region
+interior_traversal,path_relation,A route entering and leaving a bounded region
+topological_relation,spatial_relation,A relation of continuity adjacency or contact
+boundary_relation,topological_relation,A demarcation at a region's limit
+contact_relation,topological_relation,A meeting of physical surfaces
+adjacent_relation,topological_relation,A next-to relation without required contact
+metric_relation,spatial_relation,A relation based on spatial magnitude
+separation_relation,metric_relation,A measurable interval between locations
+near_relation,separation_relation,A short interval relative to a scale
+force_relation,spatial_relation,A relation of bodily or mechanical forces
+equilibrium_relation,force_relation,A state under competing forces
+stable_equilibrium,equilibrium_relation,A state maintaining equilibrium
+unstable_equilibrium,equilibrium_relation,A loss of equilibrium

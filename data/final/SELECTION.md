@@ -4,6 +4,8 @@
 
 The team working set in [`concepts_zh20_en20_v01.csv`](concepts_zh20_en20_v01.csv) has **20 Chinese and 20 English senses**. [`nomination_counts_v01.csv`](nomination_counts_v01.csv) records all nominations, counts, contributors, and decisions. This is the final **selection of concepts** for subsequent team annotation; the seven feature scores, C, S, and examples remain pending review.
 
+The later [v0.2 scored working dataset](concepts_zh20_en20_v02.csv) fills those fields through a documented manual first pass. The [annotation guide](../annotation/ANNOTATION.md) explains the scale, taxonomy, and remaining peer-review step; the v0.1 file remains the frozen selection record.
+
 ## Counting rule
 
 - Count one vote per contributor for the same **language and normalized term**. Normalize Unicode with NFKC, trim and collapse whitespace, and case-fold English. Do not combine votes across languages.

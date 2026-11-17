@@ -1,0 +1,41 @@
+concept_id,visual_0_2,auditory_0_2,tactile_0_2,motor_0_2,proprioceptive_0_2,interoceptive_0_2,social_0_2,specificity_parent,example_sentence,annotation_note,confidence
+ZH01,2,0,1,0,0,0,0,bounded_interior,钥匙在抽屉内部。,Enclosed region is directly visible; its boundary can also be felt.,high
+ZH02,2,0,0,1,0,0,0,circumventing_path,小路环绕着湖泊。,Circuit is visible and can be enacted by travel.,high
+ZH03,2,0,1,0,0,0,0,boundary_relation,栅栏标出了田地的边界。,Demarcation is visible and may be traced by touch.,high
+ZH04,1,0,0,0,0,0,0,terrain_side,古人称山的北面为阴。,Target is a geographic side; shade is contextual rather than required.,low
+ZH05,1,0,0,0,0,0,0,terrain_side,古人称山的南面为阳。,Target is a geographic side; sunlight is contextual rather than required.,low
+ZH06,2,0,0,0,1,0,0,vertical_relation,灯挂在桌子上方。,Vertical relation is seen and can be located against the body axis.,high
+ZH07,2,0,0,0,1,0,0,vertical_relation,地毯铺在桌子下方。,Vertical relation is seen and can be located against the body axis.,high
+ZH08,2,0,0,0,1,0,0,front_back_relation,车站在学校前方。,Facing direction may be visible or body anchored.,medium
+ZH09,2,0,0,0,1,0,0,front_back_relation,停车场在大楼后方。,Facing direction may be visible or body anchored.,medium
+ZH10,2,0,0,0,2,0,0,lateral_relation,药店在银行左侧。,Left is anchored to a viewer or oriented body.,medium
+ZH11,2,0,0,0,2,0,0,lateral_relation,邮局在银行右侧。,Right is anchored to a viewer or oriented body.,medium
+ZH12,2,0,1,0,0,0,0,exterior_relation,警卫站在建筑外部。,Outside region is visible; crossing the boundary can be felt.,medium
+ZH13,2,0,0,0,0,0,0,center_part,喷泉位于广场中心。,Central point is identifiable from visible limits.,high
+ZH14,2,0,1,0,0,0,0,edge_part,椅子放在舞台边缘。,Periphery is visible and an edge can be felt.,high
+ZH15,2,0,0,0,0,0,0,intervening_region,两栋楼之间有一条窄路。,Intervening region can be directly seen.,high
+ZH16,2,0,0,0,0,0,0,adjacent_relation,教室与图书馆相邻。,Adjacency is visible but contact is not entailed.,high
+ZH17,2,0,0,1,1,0,0,separation_relation,两站之间的距离约为一公里。,Interval can be seen or estimated through travel and bodily effort.,medium
+ZH18,2,0,0,1,0,0,0,path_relation,地图上标出了登山路径。,Route is visible and can be enacted through movement.,high
+ZH19,1,0,2,0,0,0,0,contact_relation,两个金属片在一角发生接触。,Surface meeting is directly felt and may be visible.,high
+ZH20,1,0,0,1,2,1,0,unstable_equilibrium,转弯太急使骑车人一时失衡。,Bodily instability is directly felt; visual and affective cues depend on context.,medium
+EN01,2,0,1,0,0,0,0,boundary_relation,The fence marks the boundary of the field.,A limit is visible and can sometimes be traced by touch.,high
+EN02,2,0,0,0,0,0,0,center_part,The fountain stands at the center of the square.,Central point is identified from visible limits.,high
+EN03,1,0,2,0,0,0,0,contact_relation,The two plates make contact at one corner.,Surface meeting is directly felt and may be visible.,high
+EN04,2,0,0,1,0,0,0,path_relation,The map shows a path through the forest.,Route is visible and can be enacted through movement.,high
+EN05,2,0,0,0,0,0,0,near_relation,The clinic's proximity to the station saves time.,Short separation is commonly visible; it does not require touch.,medium
+EN06,2,0,1,0,0,0,0,bounded_interior,The coins are inside the box.,Enclosure is visible and a container boundary may be felt.,high
+EN07,2,0,1,0,0,0,0,exterior_relation,The bicycle is outside the gate.,Exterior location is visible; boundary crossing can be felt.,medium
+EN08,2,0,0,0,1,0,0,vertical_relation,The lamp hangs above the desk.,Vertical direction is seen and body anchored.,high
+EN09,2,0,0,0,1,0,0,vertical_relation,The rug lies below the shelf.,Vertical direction is seen and body anchored.,high
+EN10,2,0,0,0,1,0,0,front_back_relation,The bus stop is in front of the school.,Facing direction may be visible or body anchored.,medium
+EN11,2,0,0,0,1,0,0,front_back_relation,The car park is behind the building.,Facing direction may be visible or body anchored.,medium
+EN12,2,0,0,0,2,0,0,lateral_relation,The pharmacy is to the left of the bank.,Left is anchored to a viewer or oriented body.,medium
+EN13,2,0,0,0,2,0,0,lateral_relation,The post office is to the right of the bank.,Right is anchored to a viewer or oriented body.,medium
+EN14,2,0,0,0,0,0,0,intervening_region,A narrow lane runs between the houses.,Intervening region is directly visible.,high
+EN15,2,0,0,0,0,0,0,adjacent_relation,The map shows the adjacency of the library and the lab.,Adjacency is visible but contact is not entailed.,high
+EN16,0,2,0,0,0,0,0,auditory_region,The hikers stayed within earshot of the guide.,Audible voice establishes the range without visual input.,high
+EN17,1,0,0,1,2,1,0,stable_equilibrium,The gymnast kept her balance on the beam.,Bodily stability is directly felt; visual and internal cues vary by context.,medium
+EN18,2,0,0,1,0,0,0,crossing_path,The children walked across the bridge.,Crossing is visible and can be enacted through movement.,high
+EN19,2,0,0,1,0,0,0,interior_traversal,The train passed through the tunnel.,Interior traversal is visible and can be enacted through movement.,high
+EN20,2,0,1,0,0,0,0,edge_part,The chair is at the edge of the stage.,Periphery is visible and an edge can be felt.,high
