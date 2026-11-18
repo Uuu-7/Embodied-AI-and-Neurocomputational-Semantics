@@ -1,0 +1,9 @@
+# HA1 interpretation — team working draft
+
+This simulator uses the 20 Chinese and 20 English spatial-relation senses in the shared HA0 table. Grounding C is the mean of seven 0–2 feature ratings. Specificity S counts root-to-sense edges in the reported taxonomy paths. Both raw measures are separately min–max normalized. Twenty-five senses have reported paths. Fifteen remain S=NA and receive no composite A score; treating missing evidence as zero would falsely classify them as broad concepts.
+
+With dividers at 0.5 on both normalized axes, the plotted senses occupy eight low-C/low-S, ten low-C/high-S, five high-C/low-S, and two high-C/high-S positions. Chinese contributes twelve points and English thirteen. Raw C ranges from 0.143 to 0.857; raw S ranges from three to eight. The high-C/high-S group is small. Fixed raw cutoffs give different counts. Uneven coverage is a result to report, not a reason to raise doubtful feature scores.
+
+The adjustable composite is A(w)=w(1−C)+(1−w)(1−S). Between w=0.2 and w=0.8, fifteen of twenty-five scored senses move by more than 0.1, and 83 concept pairs reverse order. The movement comes from disagreement between the two axes: EN04 has lower normalized C than S and becomes more abstract as C gains weight, whereas EN11 has higher C than S and moves the other way. Rankings therefore need both components and w.
+
+Mean and sum C yield identical normalized positions because they differ only by a constant multiplier. A maximum-channel rule fails here: every sense has at least one channel scored two, so it has no variance. Counting active channels changes one quadrant. Nine flagged feature values retain current scores pending human adjudication. Lexical senses have been manually confirmed by Xia Yuqi, while the feature audit is AI-assisted. The 25 reported S paths still need independent source verification. These are computational proxies, not validated measurements of human abstractness.
