@@ -1,0 +1,13 @@
+category_parent,definition_en,supercategory,selection_status
+spatial_or_embodied_relation,"A relation involving location, arrangement, route, contact, or physical force.",,AI_assisted_proposal_pending_team_review
+spatial_location,A place specified relative to a reference space.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+bounded_region_relation,A location defined by being within or beyond an enclosing boundary.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+spatial_limit,A spatial divider that marks where a region ends.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+reference_point_relation,A position determined by a figure's extent or limits.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+oriented_location,"A place specified using a direction, axis, or viewpoint.",spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+intervening_region_relation,A region located with respect to two bounding references.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+spatial_interval_relation,A measurable or perceptible separation between entities.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+spatial_arrangement,"An arrangement of surfaces, lines, entities, or body parts.",spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+route_or_traversal_relation,"A route or cross-region relation, whether static or traversed.",spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+nearness_or_touch_relation,A relation of immediate nearness or surface meeting.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
+load_or_stability_relation,A force or bodily-stability relation that resists displacement.,spatial_or_embodied_relation,AI_assisted_proposal_pending_team_review
