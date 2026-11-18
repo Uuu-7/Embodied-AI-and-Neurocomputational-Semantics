@@ -6,8 +6,6 @@ The [integrated vocabulary database](data/final/spatial_relations_zh20_en20_v2.c
 
 The three original candidate pools and proposals are preserved under [`candidates/`](candidates/). The v2 ratings are a provisional integration, not three independent annotations or a team sign-off. Reported S paths and constructed examples need independent verification.
 
-[Xia Yuqi's HA0/HA1 working submission](assignments/xiayuqi/) uses v2 and contains the 40-row course export, an executed C×S simulator notebook, figures, and an interpretation.
-
 ## Next checks
 
 1. Reconcile source sense and part-of-speech differences flagged in the CSV.
