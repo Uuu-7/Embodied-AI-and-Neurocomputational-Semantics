@@ -1,6 +1,6 @@
 # Integrated dataset v2: source and adjudication record
 
-**Scope:** 20 Chinese and 20 English selected spatial senses. The original candidate proposals under `candidates/` and the v1 release remain unchanged. This v2 is a reconciled working dataset for the course simulator, **not** a record of three independent seven-channel ratings or unanimous team approval.
+**Scope:** 20 Chinese and 20 English selected spatial senses. The original candidate proposals under `candidates/` and the v1 release remain unchanged. This v2 is a reconciled working dataset, **not** a record of three independent seven-channel ratings or unanimous team approval.
 
 ## Inputs and exact changes
 
@@ -23,4 +23,4 @@ The old descriptive raw cutoffs (`C_sum >= 5`, `S_depth >= 6`) give low/low **12
 
 ## Reproduce and next review
 
-Run `python data/final/build_v2.py`, `python assignments/xiayuqi/refresh_ha0.py`, and the cells in `assignments/xiayuqi/ha1_simulator.ipynb` in order. Check the 40-row dataset, 280-row provenance, HA0 export, score CSV, and two figures. The team should independently verify the C rubric, the disputed lexical senses, and the 25 carried S paths before treating this as final validated annotation or submitting it as joint work.
+Run `python data/final/build_v2.py` to regenerate the 40-row dataset and 280-row feature provenance file from the preserved inputs. The team should independently verify the C rubric, the disputed lexical senses, and the 25 carried S paths before treating this as final validated annotation or submitting it as joint work.
