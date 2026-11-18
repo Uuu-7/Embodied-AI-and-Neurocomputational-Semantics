@@ -6,6 +6,8 @@ The [selected vocabulary database](data/final/spatial_relations_zh20_en20_v1.csv
 
 The three original candidate pools and proposals are preserved under [`candidates/`](candidates/). The selected 40-item inventory is the current repository version. Reference C ratings, reported S paths, and constructed examples should be independently checked before being treated as agreed team annotations.
 
+[Xia Yuqi's HA0/HA1 working submission](assignments/xiayuqi/) contains the 40-row course export, an executed C×S simulator notebook, figures, and an interpretation. Its source and annotation limitations are documented in that folder.
+
 ## Next checks
 
 1. Reconcile source sense and part-of-speech differences flagged in the CSV.
