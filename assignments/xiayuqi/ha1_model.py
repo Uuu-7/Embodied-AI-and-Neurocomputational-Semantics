@@ -129,7 +129,7 @@ def scatter_plot(scores: pd.DataFrame, output: Path) -> None:
     ax.axvline(0.5, color="#555", linestyle="--", linewidth=1)
     ax.axhline(0.5, color="#555", linestyle="--", linewidth=1)
     ax.set(xlim=(-0.06, 1.12), ylim=(-0.06, 1.08), xlabel="C normalized (min–max)",
-           ylabel="S normalized (min–max)", title="C × S: 26 supported paths")
+           ylabel="S normalized (min–max)", title=f"C × S: {len(valid)} reported paths")
     ax.grid(alpha=0.18)
     key.axis("off")
     key.text(0, 1, "\n".join(key_lines), va="top", ha="left", fontsize=9,
@@ -159,7 +159,7 @@ def weight_sensitivity_plot(scores: pd.DataFrame, output: Path) -> None:
         ax.legend(title="Concept ID", loc="center left", bbox_to_anchor=(1.01, 0.5),
                   fontsize=8, frameon=False)
     axes[0].set_ylabel("Composite abstractness A(w)")
-    fig.suptitle("Weight sensitivity: one line per concept with a supported S path")
+    fig.suptitle("Weight sensitivity: one line per concept with a reported S path")
     fig.text(0.5, 0.01, "Some concepts have identical C and S profiles, so their lines coincide.",
              ha="center", fontsize=9)
     output.parent.mkdir(parents=True, exist_ok=True)

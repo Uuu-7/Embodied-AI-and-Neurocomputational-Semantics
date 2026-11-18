@@ -1,6 +1,6 @@
 # HA0: data and feature guide (Xia Yuqi)
 
-The accompanying CSV exports the 20 Chinese and 20 English selected senses for HA0. The instructor has accepted this bilingual 40-row scope. The source table is `data/final/spatial_relations_zh20_en20_v1.csv`; the three original candidate pools remain under `candidates/`.
+The accompanying CSV exports the 20 Chinese and 20 English selected senses for HA0. The instructor has accepted this bilingual 40-row scope. The source table is `data/final/spatial_relations_zh20_en20_v2.csv`; the three original candidate pools remain under `candidates/`.
 
 ## Target sense and category
 
@@ -34,7 +34,7 @@ For every channel, `0` means absent from typical direct grounding of the target 
 | Interoceptive | Internal bodily state or affect |
 | Social | Interpersonal role, convention, or norm in the target sense |
 
-The provenance enum is `manual` or `generated` for these rows. `manual` refers to the single rating pass imported from PR #12; the workbook's rater field was not filled, so it is **not** an independent Xia rating. `generated` refers to the PR #11 draft or two newly proposed estimates. Definitions copied from the members' proposals are labelled `manual`; two narrowed definitions derived in PR #11 are `generated`. The examples and category grouping were constructed for this export and are labelled `generated`. All rows are marked as drafts awaiting Xia's independent review.
+Per-feature provenance is `reported_prior_rating` or `generated`, matching the 280-row `data/final/feature_provenance_v2.csv`. `reported_prior_rating` refers to PR #12's single rating pass; its workbook rater field was blank, so it is **not** an independent Xia rating. `generated` includes earlier draft estimates and Chen's AI-assisted PR #14 re-audit, including the eight corrections he made after Hu's review. Hu's feedback is a source of those corrections, not an independent score sheet. Definitions copied from the members' proposals remain labelled `manual`; a narrowed sense such as EN19 is `generated`. The examples and category grouping are constructed illustrations. All rows are integrated proposals pending team validation.
 
 One deliberately uncertain row is `EN20`, where motor and proprioceptive involvement depends on an active person versus a passive load-bearing structure. Its one-line note is in `uncertainty_note`.
 
@@ -46,7 +46,7 @@ One deliberately uncertain row is `EN20`, where motor and proprioceptive involve
 
 ## Submission checks
 
-- Review the seven channel values and their provenance before representing them as Xia's own ratings.
+- Review the seven channel values and their provenance before representing them as independent personal ratings.
 - Confirm that the target definitions, parts of speech, and single parent assignments match the intended senses.
 - The illustrative examples are newly written; replace them with cited corpus examples if the instructor requires attested use.
 - The export has no random step or seed. HA1's notebook records its computational environment and creates the plots deterministically.
