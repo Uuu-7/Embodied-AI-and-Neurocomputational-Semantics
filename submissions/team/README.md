@@ -1,6 +1,6 @@
-# Shared HA0/HA1 working submission
+# Shared HA0/HA1 submission package
 
-This folder packages the team's current course materials for the instructor-accepted 20 Chinese + 20 English sense inventory. It is a **working draft**. Xia Yuqi manually confirmed the lexical senses; the parent nodes and seven-feature audit were prepared with AI assistance and remain open to team review. No LMS upload or three-person agreement is claimed.
+This folder packages the course materials for the instructor-accepted 20 Chinese + 20 English sense inventory. HA1 is a **reproducible submission version** with executed cells and regenerated outputs. Xia Yuqi confirmed the original lexical inventory. The EN15 movement-sense wording and nine feature-review decisions are recorded in `data/reviews/HA1_ADJUDICATION_V4.md`. No LMS upload or three-person agreement is claimed.
 
 | Artifact | Purpose |
 |---|---|
@@ -14,6 +14,6 @@ This folder packages the team's current course materials for the instructor-acce
 
 ## Reproduce
 
-From the repository root, run `python data/final/build_v3.py`, then open `submissions/team/HA1/ha1_simulator.ipynb` and run all cells. The builder uses the preserved v2 table and 280-value provenance file; it has no random step. The notebook requires Python, NumPy, pandas, Matplotlib, IPython, and Jupyter/nbclient. It writes the score CSVs and figures in its own folder. `HA1/refresh_notebook.py` synchronizes the notebook's input description and interpretation after a deliberate source update; run all notebook cells again afterward.
+From the repository root, run `python data/final/build_v4.py`, then `python submissions/team/HA1/refresh_notebook.py`, then `python submissions/team/HA1/execute_notebook.py`. The builder derives v4 from the preserved v3 data and audit without random sampling. The notebook requires Python, NumPy, pandas, Matplotlib, IPython, Jupyter, nbclient, and optionally ipywidgets for its live slider. The execution script saves the notebook outputs, two score CSVs, and two PNG figures. If editing the interpretation, run the refresh and execution scripts again in that order.
 
-The shared HA0 table is a submission candidate, not an independently agreed team annotation. Nine feature values are flagged in `data/reviews/feature_score_audit_v3.csv`; the 25 reported S paths have not been independently revalidated. If the team changes scores or target senses, record the decision in a new version and rerun HA1.
+The HA0 table and HA1 results use the same v4 input. Four feature values were changed and five flagged values were retained with reasons; the 25 reported S paths have their edge counts checked but have not all been independently revalidated against source synsets. If the team changes scores or target senses, record the decision in a new version and rerun HA1. Submit the notebook, HA0 CSV and method, and interpretation to the course LMS according to the instructor's requirements.

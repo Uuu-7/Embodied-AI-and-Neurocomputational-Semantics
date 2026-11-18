@@ -34,6 +34,11 @@ def load_inventory(path: Path) -> pd.DataFrame:
         raise ValueError("Every selected sense needs seven channel scores")
     if not data[list(FEATURES)].isin([0, 1, 2]).all().all():
         raise ValueError("Channel scores must be 0, 1, or 2")
+    totals = data.loc[:, FEATURES].astype(int).sum(axis=1)
+    if not (totals == pd.to_numeric(data["C_sum"])).all():
+        raise ValueError("Stored C_sum differs from the seven channel scores")
+    if not np.allclose(totals / 14, pd.to_numeric(data["C_unit"]), atol=1e-6):
+        raise ValueError("Stored C_unit differs from C_sum/14")
     return data
 
 

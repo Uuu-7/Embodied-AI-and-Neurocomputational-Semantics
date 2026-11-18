@@ -1,7 +1,7 @@
 concept_id,language,term,semantic_family,C_rating_source,C_raw,C_norm,S_raw,S_norm,S_source,quadrant,A_0.2,A_0.5,A_0.8
 ZH01,ZH,位置,position,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,3.000000,0.000000,PR12:COW 1.1 + OMW 2.0,high_C_low_S,0.880000,0.700000,0.520000
-ZH02,ZH,内部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,5.000000,0.400000,PR12:COW 1.1 + OMW 2.0,high_C_low_S,0.560000,0.500000,0.440000
-ZH03,ZH,外部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,,,,NA_S,,,
+ZH02,ZH,内部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft; Chen PR17 review; HA1 editorial decision,0.428571,0.400000,5.000000,0.400000,PR12:COW 1.1 + OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
+ZH03,ZH,外部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft; Chen PR17 review; HA1 editorial decision,0.428571,0.400000,,,,NA_S,,,
 ZH04,ZH,边界,boundary,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.428571,0.400000,5.000000,0.400000,PR12:COW 1.1 + OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
 ZH05,ZH,中心,center_periphery,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.428571,0.400000,5.000000,0.400000,PR12:COW 1.1 + OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
 ZH06,ZH,前面,orientation,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.428571,0.400000,6.000000,0.600000,PR12:COW 1.1 + OMW 2.0,low_C_high_S,0.440000,0.500000,0.560000
@@ -30,10 +30,10 @@ EN08,EN,alignment,configuration,Chen_AI_assisted_target_sense_C_reaudit_PR_draft
 EN09,EN,angle,configuration,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.428571,0.400000,5.000000,0.400000,PR12:OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
 EN10,EN,separation,distance,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.285714,0.200000,7.000000,0.800000,PR12:OMW 2.0,low_C_high_S,0.320000,0.500000,0.680000
 EN11,EN,posture,configuration,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.857143,1.000000,5.000000,0.400000,PR12:OMW 2.0,high_C_low_S,0.480000,0.300000,0.120000
-EN12,EN,inside,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,,,,NA_S,,,
+EN12,EN,inside,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft; Chen PR17 review; HA1 editorial decision,0.428571,0.400000,,,,NA_S,,,
 EN13,EN,above,orientation,PR11:draft_rating,0.428571,0.400000,,,,NA_S,,,
 EN14,EN,below,orientation,PR11:draft_rating,0.428571,0.400000,,,,NA_S,,,
-EN15,EN,across,path,PR11:draft_rating,0.571429,0.600000,,,,NA_S,,,
+EN15,EN,across,path,PR11:draft_rating; Chen PR17 review; HA1 editorial decision,0.714286,0.800000,,,,NA_S,,,
 EN16,EN,through,path,PR11:draft_rating,0.714286,0.800000,,,,NA_S,,,
 EN17,EN,path,path,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.428571,0.400000,5.000000,0.400000,PR12:OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
 EN18,EN,contact,contact,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,6.000000,0.600000,PR12:OMW 2.0,high_C_high_S,0.400000,0.400000,0.400000
