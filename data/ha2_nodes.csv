@@ -1,0 +1,26 @@
+﻿node_id,label,graph_label,node_type,language,part_of_speech,definition_en,provenance,source_concept_id,provisional_taxonomy_depth,parent_ids
+CAT_ROOT,spatial concept,spatial concept,category,NA,NA,"A concept concerning physical location, regions, extents, routes, spatial relations, or arrangement.",manual_HA2_schema,,0,
+CAT_LOC,locational concept,location,category,NA,NA,"A concept specifying a physical place, point, or region relative to a reference.",manual_HA2_schema,,1,CAT_ROOT
+CAT_REGION,relative region,region,category,NA,NA,A spatial region specified with respect to one or more boundaries or reference entities.,manual_HA2_schema,,2,CAT_LOC
+CAT_REF,reference location,reference point,category,NA,NA,A point or position determined in a reference space or figure.,manual_HA2_schema,,2,CAT_LOC
+CAT_REL,inter-entity relation,spatial relation,category,NA,NA,A relation describing separation or immediate nearness between spatial references.,manual_HA2_schema,,1,CAT_ROOT
+CAT_INTERVAL,spatial interval,interval,category,NA,NA,"An interval, opening, or degree of separation between spatial references.",manual_HA2_schema,,2,CAT_REL
+CAT_NEAR,immediate nearness,nearness,category,NA,NA,A relation of direct neighborhood or physical meeting between entities.,manual_HA2_schema,,2,CAT_REL
+CAT_LIMIT,spatial limit,limit,category,NA,NA,A line or surface delimiting a spatial region.,manual_HA2_schema,,1,CAT_ROOT
+CAT_ROUTE,spatial route,route,category,NA,NA,A route through space along which movement could occur.,manual_HA2_schema,,1,CAT_ROOT
+CAT_FORM,spatial structural property,structure,category,NA,NA,"A geometric or bodily property of how parts, lines, or entities are arranged.",manual_HA2_schema,,1,CAT_ROOT
+ZH01,位置,ZH01 position,lexical_sense,ZH,noun,A specified point or extent in a reference space.,spatial_relations.csv:target_sense_definition_en,ZH01,3,CAT_REF
+ZH02,内部,ZH02 interior,lexical_sense,ZH,noun,The region enclosed by a reference entity.,spatial_relations.csv:target_sense_definition_en,ZH02,3,CAT_REGION
+ZH03,外部,ZH03 exterior,lexical_sense,ZH,locative_noun,A region beyond the boundary of a reference entity,spatial_relations.csv:target_sense_definition_en,ZH03,3,CAT_REGION
+ZH04,边界,ZH04 boundary,lexical_sense,ZH,noun,A line delimiting the extent of an area.,spatial_relations.csv:target_sense_definition_en,ZH04,2,CAT_LIMIT
+ZH05,中心,ZH05 center,lexical_sense,ZH,noun,A central point fixed by the limits of a reference figure.,spatial_relations.csv:target_sense_definition_en,ZH05,3,CAT_REF
+ZH13,之间,ZH13 between,lexical_sense,ZH,relation,An intervening region bounded by two specified reference entities,spatial_relations.csv:target_sense_definition_en,ZH13,3,CAT_REGION
+ZH16,路径,ZH16 path,lexical_sense,ZH,noun,A route along which motion could occur.,spatial_relations.csv:target_sense_definition_en,ZH16,2,CAT_ROUTE
+EN04,proximity,EN04 proximity,lexical_sense,EN,noun,A short distance between entities relative to a specified scale.,spatial_relations.csv:target_sense_definition_en,EN04,3,CAT_INTERVAL
+EN05,distance,EN05 distance,lexical_sense,EN,noun,The measurable separation between two locations.,spatial_relations.csv:target_sense_definition_en,EN05,3,CAT_INTERVAL
+EN06,gap,EN06 gap,lexical_sense,EN,noun,An open interval or space between bounded entities.,spatial_relations.csv:target_sense_definition_en,EN06,3,CAT_INTERVAL
+EN07,adjacency,EN07 adjacency,lexical_sense,EN,noun,A relation in which entities lie immediately next to each other.,spatial_relations.csv:target_sense_definition_en,EN07,3,CAT_NEAR
+EN08,alignment,EN08 alignment,lexical_sense,EN,noun,The arrangement of entities along a common line or direction.,spatial_relations.csv:target_sense_definition_en,EN08,2,CAT_FORM
+EN09,angle,EN09 angle,lexical_sense,EN,noun,The amount of turn between intersecting lines or planes.,spatial_relations.csv:target_sense_definition_en,EN09,2,CAT_FORM
+EN11,posture,EN11 posture,lexical_sense,EN,noun,The spatial arrangement of a body and its limbs.,spatial_relations.csv:target_sense_definition_en,EN11,2,CAT_FORM
+EN18,contact,EN18 contact,lexical_sense,EN,noun,A state in which two physical surfaces meet.,spatial_relations.csv:target_sense_definition_en,EN18,3,CAT_NEAR
