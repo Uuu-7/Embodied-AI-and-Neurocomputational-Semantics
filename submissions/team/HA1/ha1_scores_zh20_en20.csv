@@ -1,4 +1,4 @@
-concept_id,language,term,semantic_family,C_rating_source,C_raw,C_norm,S_raw,S_norm,S_source,quadrant,A_0.2,A_0.5,A_0.8
+﻿concept_id,language,term,semantic_family,C_rating_source,C_raw,C_norm,S_raw,S_norm,S_source,quadrant,A_0.2,A_0.5,A_0.8
 ZH01,ZH,位置,position,Chen_AI_assisted_target_sense_C_reaudit_PR_draft,0.571429,0.600000,3.000000,0.000000,PR12:COW 1.1 + OMW 2.0,high_C_low_S,0.880000,0.700000,0.520000
 ZH02,ZH,内部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft; Chen PR17 review; HA1 editorial decision,0.428571,0.400000,5.000000,0.400000,PR12:COW 1.1 + OMW 2.0,low_C_low_S,0.600000,0.600000,0.600000
 ZH03,ZH,外部,containment,Chen_AI_assisted_target_sense_C_reaudit_PR_draft; Chen PR17 review; HA1 editorial decision,0.428571,0.400000,,,,NA_S,,,

@@ -1,4 +1,4 @@
-concept_id,language,term,C_norm,S_norm,A_0.2,A_0.8,weight_change,fragile,one_sentence_reason
+﻿concept_id,language,term,C_norm,S_norm,A_0.2,A_0.8,weight_change,fragile,one_sentence_reason
 ZH01,ZH,位置,0.600000,0.000000,0.880000,0.520000,0.360000,True,A falls by 0.36 from w=0.2 to 0.8 because normalized C is higher than normalized S for this target sense.
 ZH02,ZH,内部,0.400000,0.400000,0.600000,0.600000,0.000000,False,A stays constant because normalized C and S are equal.
 ZH04,ZH,边界,0.400000,0.400000,0.600000,0.600000,0.000000,False,A stays constant because normalized C and S are equal.

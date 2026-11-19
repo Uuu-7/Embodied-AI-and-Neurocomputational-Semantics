@@ -48,7 +48,7 @@ def read(path: Path) -> list[dict[str, str]]:
 
 
 def write(path: Path, rows: list[dict[str, str]]) -> None:
-    with path.open("w", encoding="utf-8", newline="") as stream:
+    with path.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
