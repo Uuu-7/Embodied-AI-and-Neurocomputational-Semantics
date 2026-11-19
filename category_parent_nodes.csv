@@ -1,4 +1,4 @@
-category_parent,definition_en,supercategory,selection_status
+﻿category_parent,definition_en,supercategory,selection_status
 spatial_or_embodied_relation,"A relation involving location, arrangement, route, contact, or physical force.",,HA1_submission_editorial_choice; team_signoff_not_recorded
 spatial_location,A place specified relative to a reference space.,spatial_or_embodied_relation,HA1_submission_editorial_choice; team_signoff_not_recorded
 bounded_region_relation,A location defined by being within or beyond an enclosing boundary.,spatial_or_embodied_relation,HA1_submission_editorial_choice; team_signoff_not_recorded
